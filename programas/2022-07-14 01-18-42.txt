@@ -36,4 +36,5 @@ choco install telegram -y
 choco install exoduswallet -y
 choco install advanced-renamer
 choco install nodejs -y
-choco install winhotkey -y
+choco install anyvideoconverter -y
+choco install slack -y
