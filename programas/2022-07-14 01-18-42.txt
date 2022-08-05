@@ -9,7 +9,8 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 
 
 
-
+choco install driverbooster -y
+choco install drivereasyfree -y
 choco install cpu-z -y
 choco install sumatrapdf -y
 choco install vlc -y
@@ -28,8 +29,6 @@ choco install foxitreader -y
 choco install libreoffice-fresh -y
 choco install teamviewer9 -y
 choco install virtualbox -y
-choco install driverbooster -y
-choco install drivereasyfree -y
 choco install zoom -y
 choco install notion -y
 choco install telegram -y
