@@ -22,7 +22,7 @@ choco install vscode -y
 choco install sublimetext4 -y
 choco install discord -y
 choco install googlechrome -y
-choco install firefox --version 102.0 -y
+choco install firefox -y
 choco install steam-client -y
 choco install epicgameslauncher -y
 choco install 7zip -y
@@ -34,7 +34,7 @@ choco install zoom -y
 choco install notion -y
 choco install telegram -y
 choco install exoduswallet -y
-choco install advanced-renamer
+choco install advanced-renamer -y
 choco install nodejs -y
 choco install anyvideoconverter -y
 choco install slack -y
