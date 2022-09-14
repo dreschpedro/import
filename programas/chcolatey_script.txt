@@ -41,6 +41,7 @@ choco install slack -y
 choco install heidisql -y
 choco install zeplin -y
 choco install sublimetext4 -y
+choco install twitch -y
 
 
 
