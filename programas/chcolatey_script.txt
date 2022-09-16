@@ -20,7 +20,6 @@ choco install qbittorrent -y
 choco install git -y
 choco install vscode -y
 choco install sublimetext4 -y
-choco install discord -y
 choco install googlechrome -y
 choco install firefox -y
 choco install steam-client -y
@@ -50,6 +49,7 @@ choco install twitch -y
 amd chipset			-> https://www.amd.com/en/support
 eagle get			-> https://eagleget.en.uptodown.com/windows
 figma				-> https://www.figma.com/downloads/
+discord			-> https://discordapp.com/api/download?platform=win
 blue stacks			-> https://www.bluestacks.com/
 office			-> https://terabox.com/s/1g1xqyAFkpnSGMcYAY_84yA
 MySQL conector		-> https://www.mysql.com/products/connector/
