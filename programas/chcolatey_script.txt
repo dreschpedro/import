@@ -21,6 +21,7 @@ choco install git -y
 choco install vscode -y
 choco install sublimetext4 -y
 choco install googlechrome -y
+choco install bitwarden-cli -y
 choco install firefox -y
 choco install steam-client -y
 choco install epicgameslauncher -y
