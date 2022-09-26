@@ -13,6 +13,7 @@ alias gcm='git commit -m'
 alias gad='git add .'
 alias gp='git push'
 alias gpl='git pull'
+alias cp='cp ..'
 
 case "$TERM" in
 xterm*)

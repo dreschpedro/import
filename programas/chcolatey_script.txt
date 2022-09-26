@@ -42,6 +42,7 @@ choco install heidisql -y
 choco install zeplin -y
 choco install sublimetext4 -y
 choco install twitch -y
+choco install jcpicker -y
 
 
 
