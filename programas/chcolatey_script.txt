@@ -43,7 +43,7 @@ choco install zeplin -y
 choco install sublimetext4 -y
 choco install twitch -y
 choco install jcpicker -y
-
+choco install uninstalltool.portable -y
 
 
 
@@ -59,4 +59,5 @@ visual basic 2010		-> https://mega.nz/file/6o0mzIYR#yAIbfgbZwjAfdXiDUUNrTC-Ql6C4
 maria db			-> https://mega.nz/file/u1MEyCKA#Jtf8nyxTxi84T7ANcFRWprYluap2zI6jY_Gk4fvtTJI
 opera gx			-> https://www.opera.com/gx
 terabox			-> https://www.terabox.com/terabox-cloud-storage-for-pc-free-download
+DbSchema			-> https://dbschema.com/download.html
 
