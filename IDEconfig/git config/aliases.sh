@@ -14,6 +14,8 @@ alias gad='git add .'
 alias gp='git push'
 alias gpl='git pull'
 alias ..='cd ..'
+alias gcun='git config --global user.name "dreschpedro"'
+alias gcue='git config --global user.email "99pedrodresch@gmail.com"'
 
 case "$TERM" in
 xterm*)
