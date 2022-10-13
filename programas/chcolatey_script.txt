@@ -17,11 +17,11 @@ choco install sumatrapdf -y
 choco install vlc -y
 choco install onecommander -y
 choco install qbittorrent -y
+choco install windirstat -y
 choco install git -y
 choco install vscode -y
 choco install sublimetext4 -y
 choco install googlechrome -y
-choco install bitwarden-cli -y
 choco install firefox -y
 choco install steam-client -y
 choco install epicgameslauncher -y
@@ -36,20 +36,17 @@ choco install telegram -y
 choco install exoduswallet -y
 choco install advanced-renamer -y
 choco install nodejs -y
-choco install anyvideoconverter -y
 choco install slack -y
 choco install heidisql -y
-choco install zeplin -y
 choco install sublimetext4 -y
-choco install twitch -y
 choco install jcpicker -y
-choco install uninstalltool.portable -y
 
 
 
 
 amd chipset			-> https://www.amd.com/en/support
 eagle get			-> https://eagleget.en.uptodown.com/windows
+SnapDownloader		-> https://snapdownloader.com/downloads
 figma				-> https://www.figma.com/downloads/
 discord			-> https://discordapp.com/api/download?platform=win
 blue stacks			-> https://www.bluestacks.com/
