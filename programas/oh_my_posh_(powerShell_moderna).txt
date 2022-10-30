@@ -1,0 +1,9 @@
+### INSTALACION ###
+$> winget install JanDeDobbeleer.OhMyPosh -s winget
+
+### BUSCAR ACTUALIZACIONES ###
+$> winget upgrade JanDeDobbeleer.OhMyPosh -s winget
+
+
+_____________________________________________________________________________________
+¡¡¡¡AGREGAR AL <PROGRAMADOR DE TAREAS>!!!!!
