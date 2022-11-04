@@ -1,9 +1,48 @@
 ### INSTALACION ###
 $> winget install JanDeDobbeleer.OhMyPosh -s winget
 
+
 ### BUSCAR ACTUALIZACIONES ###
-$> winget upgrade JanDeDobbeleer.OhMyPosh -s winget
+$> winget upgrade JanDeDobbeleer.OhMyPosh -s winget   
+--->¡¡¡¡AGREGAR AL <PROGRAMADOR DE TAREAS>!!!!!
 
 
-_____________________________________________________________________________________
-¡¡¡¡AGREGAR AL <PROGRAMADOR DE TAREAS>!!!!!
+#### TEMAS DE TERMINAL ####
+
+C:\Users\Pedro\AppData\Local\Programs\oh-my-posh\themes
+
+
+##### VER TEMAS DISPONIBLES ####
+$> Get-PoshThemes
+
+****** INSTALAR TEMA
+PEGAR--> "oh-my-posh init pwsh --config 'C:\Users\Pedro\AppData\Local\Programs\oh-my-posh\themes\[NOMBRE DEL TEMA].omp.json' | Invoke-Expression"
+EN ---> ARCHIVO CONFIGURACION ---->
+C:\Users\Pedro\Documents\PowerShell\Microsoft.PowerShell_profile.ps1
+
+
+#### ICONOS PERSONALIZADOS
+
+****** INSTALAR
+$> Install-Module -Name Terminal-Icons -Repository PSGallery
+
+PEGAR ... EN EL ARCHIVO DE CONFIGUACION 
+
+"Import-Module -Name Terminal-Icons"
+
+
+#### CONFIGURACION FINAL ######
+________________________________________
+oh-my-posh init pwsh --config 'C:\Users\Pedro\AppData\Local\Programs\oh-my-posh\themes\[NOMBRE DEL TEMA].omp.json' | Invoke-Expression
+Import-Module -Name Terminal-Icons
+________________________________________
+
+
+
+// MIRAR VIDEO https://youtu.be/d9y0l7yY404
+
+
+
+**********sin mensaje de inicio PowerShell (MIRAR IMAGEN)
+
+"-nologo"
