@@ -1,0 +1,60 @@
+### INSTALACION ###
+Set-ExecutionPolicy AllSigned
+
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+
+###ACTUALIZAR PROGRAMAS INSTALADOS###
+$> choco upgrade all -y
+
+
+
+choco install driverbooster -y
+choco install drivereasyfree -y
+choco install patch-my-pc -y
+choco install cpu-z -y
+choco install sumatrapdf -y
+choco install vlc -y
+choco install onecommander -y
+choco install qbittorrent -y
+choco install windirstat -y
+choco install git -y
+choco install vscode -y
+choco install sublimetext4 -y
+choco install googlechrome -y
+choco install firefox -y
+choco install steam-client -y
+choco install epicgameslauncher -y
+choco install 7zip -y
+choco install foxitreader -y
+choco install libreoffice-fresh -y
+choco install teamviewer9 -y
+choco install virtualbox -y
+choco install zoom -y
+choco install notion -y
+choco install telegram -y
+choco install exoduswallet -y
+choco install advanced-renamer -y
+choco install nodejs -y
+choco install slack -y
+choco install heidisql -y
+choco install sublimetext4 -y
+choco install jcpicker -y
+
+
+
+
+amd chipset			-> https://www.amd.com/en/support
+eagle get			-> https://eagleget.en.uptodown.com/windows
+SnapDownloader		-> https://snapdownloader.com/downloads
+figma				-> https://www.figma.com/downloads/
+discord			-> https://discordapp.com/api/download?platform=win
+blue stacks			-> https://www.bluestacks.com/
+office			-> https://terabox.com/s/1g1xqyAFkpnSGMcYAY_84yA
+MySQL conector		-> https://www.mysql.com/products/connector/
+visual basic 2010		-> https://mega.nz/file/6o0mzIYR#yAIbfgbZwjAfdXiDUUNrTC-Ql6C4tdI-8Wmso0_Mol4
+maria db			-> https://mega.nz/file/u1MEyCKA#Jtf8nyxTxi84T7ANcFRWprYluap2zI6jY_Gk4fvtTJI
+opera gx			-> https://www.opera.com/gx
+terabox			-> https://www.terabox.com/terabox-cloud-storage-for-pc-free-download
+DbSchema			-> https://dbschema.com/download.html
+Afterburner			-> https://www.msi.com/Landing/afterburner/graphics-cards
+
