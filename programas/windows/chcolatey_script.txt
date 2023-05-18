@@ -22,30 +22,27 @@ choco install vscode -y
 choco install sublimetext4 -y
 choco install googlechrome -y
 choco install firefox -y
-choco install steam-client -y
 choco install epicgameslauncher -y
 choco install 7zip -y
 choco install foxitreader -y
 choco install libreoffice-fresh -y
-choco install teamviewer9 -y
+choco install teamviewer -y
 choco install virtualbox -y
 choco install zoom -y
 choco install notion -y
 choco install telegram -y
-choco install exoduswallet -y
 choco install advanced-renamer -y
 choco install nodejs -y
-choco install slack -y
 choco install heidisql -y
-choco install sublimetext4 -y
+choco install postman -y
 choco install jcpicker -y
 
 
-
-
+Python			-> https://www.python.org/downloads/
+Rainmether			-> https://www.rainmeter.net
+Power Shell 7		-> learn.microsoft.com/es-es/powershell/scripting/install/installing-powershell-on-windows
 amd chipset			-> https://www.amd.com/en/support
-eagle get			-> https://eagleget.en.uptodown.com/windows
-SnapDownloader		-> https://snapdownloader.com/downloads
+Steam				-> https://store.steampowered.com/about/
 figma				-> https://www.figma.com/downloads/
 discord			-> https://discordapp.com/api/download?platform=win
 blue stacks			-> https://www.bluestacks.com/
@@ -57,4 +54,8 @@ opera gx			-> https://www.opera.com/gx
 terabox			-> https://www.terabox.com/terabox-cloud-storage-for-pc-free-download
 DbSchema			-> https://dbschema.com/download.html
 Afterburner			-> https://www.msi.com/Landing/afterburner/graphics-cards
-
+Ccleaner			-> https://www.ccleaner.com/ccleaner/download/standard
+Recuva			-> https://www.ccleaner.com/recuva/download/standard
+Vysor				-> https://www.vysor.io
+Any Video Converter	-> https://www.any-video-converter.com/en6/for_video_free/whatnew.html
+Screen Task			-> https://github.com/EslaMx7/ScreenTask/releases/tag/v1.2

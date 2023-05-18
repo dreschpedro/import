@@ -1,1 +1,6 @@
-zsh_theme -> blinks
+install->
+
+sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+
+ZSH_THEME_RANDOM_CANDIDATES=("intheloop" "aussiegeek" "bira" "blinks" "candy" "crcandy" "dst" "amuse" "frisk" "funky" "gnzh" "itchy" "jispwoso")

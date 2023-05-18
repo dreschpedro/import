@@ -3,7 +3,7 @@ $> winget install JanDeDobbeleer.OhMyPosh -s winget
 
 
 ### BUSCAR ACTUALIZACIONES ###
-$> winget upgrade JanDeDobbeleer.OhMyPosh -s winget   
+$> winget upgrade JanDeDobbeleer.OhMyPosh -s winget
 --->¡¡¡¡AGREGAR AL <PROGRAMADOR DE TAREAS>!!!!!
 
 
@@ -33,7 +33,7 @@ PEGAR ... EN EL ARCHIVO DE CONFIGUACION
 
 #### CONFIGURACION FINAL ######
 ________________________________________
-oh-my-posh init pwsh --config 'C:\Users\Pedro\AppData\Local\Programs\oh-my-posh\themes\[NOMBRE DEL TEMA].omp.json' | Invoke-Expression
+oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\[NOMBRE DEL TEMA].omp.json" | Invoke-Expression
 Import-Module -Name Terminal-Icons
 ________________________________________
 

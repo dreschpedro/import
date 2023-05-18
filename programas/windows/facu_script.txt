@@ -10,22 +10,14 @@ choco install patch-my-pc -y
 choco install cpu-z -y
 choco install sumatrapdf -y
 choco install vlc -y
-choco install onecommander -y
 choco install git -y
 choco install vscode -y
 choco install sublimetext4 -y
-choco install googlechrome -y
-choco install firefox -y
 choco install 7zip -y
 choco install foxitreader -y
-choco install libreoffice-fresh -y
-choco install teamviewer9 -y
-choco install virtualbox -y
 choco install zoom -y
 choco install advanced-renamer -y
-choco install nodejs -y
-choco install heidisql -y
-choco install sublimetext4 -y
+
 
 
 

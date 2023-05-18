@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Latest shortcuts, quick reference, examples for tmux terminal multiplexer which runs on Linux, OS X, OpenBSD, FreeBSD, NetBSD, etc...">
+    <meta name="keywords"
+        content="tmux,terminal multiplexer,cheatsheet,tmux command,tmux config,tmux examples,tmux linux,tmux ubuntu">
+    <link rel="icon" href="/favicon.ico">
+
+    <title>Tmux Cheat Sheet & Quick Reference</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/rrssb.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <style>
+        body {
+            min-height: 2000px;
+            padding-top: 70px;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            color: #444;
+        }
+
+        h2 {
+            font-size: 24px;
+            padding: 8px 0;
+            text-align: center;
+            margin: 10px 0;
+            color: #444;
+            border-radius: 4px;
+        }
+
+        .qrcode_wrapper {
+            position: absolute;
+            right: 0;
+            font-size: 10px;
+            width: 64px;
+            top: -20px;
+            line-height: 14px;
+        }
+
+        .qrcode_wrapper {}
+
+        .qrcode_wrapper .qrcode img {}
+
+        .cheatsheet {
+            line-height: 24px;
+        }
+
+        .cheatsheet .prefix {
+            margin-right: 20px;
+        }
+
+        .kbd-margin {
+            margin-right: 20px;
+        }
+
+        .cheatsheet .cmd {
+            background: #333;
+            font-size: 22px;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 4px;
+            margin: 0 0 5px;
+        }
+
+        .cheatsheet .tmuxcmd {
+            background: #294904;
+        }
+
+        .cheatsheet .cmd .fa-dollar {
+            font-size: 21px;
+            font-weight: normal;
+        }
+
+        .cheatsheet p {
+            font-size: 16px;
+            margin: 5px 0 17px 0;
+            color: #666;
+        }
+
+        .cheatsheet .shortcut {
+            font-size: 22px;
+            color: #333;
+            margin: 0 0 5px;
+        }
+
+        .cheatsheet .shortcut kbd {
+            color: #fff;
+            background: #333;
+            border-radius: 4px;
+            box-shadow: 2px 2px 2px #aaa;
+            /*font-size: 22px;*/
+            padding: 5px 10px;
+            line-height: 33px;
+        }
+
+        .row.social {
+            margin-bottom: 10px;
+        }
+
+        .noselect {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        #cheat-search-input {
+            margin: 20px 0 10px 0;
+            padding: 3px;
+            border: solid 1px #E4E4E4;
+            border-radius: 6px;
+            background-color: #fff;
+        }
+
+        #cheat-search-input input {
+            border: 0;
+            box-shadow: none;
+            color: #777;
+        }
+
+        #cheat-search-input button {
+            margin: 2px 0 0 0;
+            background: none;
+            box-shadow: none;
+            border: 0;
+            color: #777;
+            padding: 0 8px 0 10px;
+            border-left: solid 1px #ccc;
+        }
+
+        #cheat-search-input button:hover {
+            border: 0;
+            box-shadow: none;
+            border-left: solid 1px #ccc;
+        }
+
+        #cheat-search-input .glyphicon-search {
+            font-size: 23px;
+        }
+    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KD1RYFW3DF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-KD1RYFW3DF');
+    </script> <!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- QR code   -->
+    <script src="js/qrcode.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/FlexSearch/0.7.2/flexsearch.bundle.min.js"
+        integrity="sha512-nFmzFs0vxLvw95r3kpEArM496n1udEDP2OJ+uoyv00RaP4B6NOHbciX0Gr2V9/DxeaHi3fKXLYty8YTLgVkquw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/js/flxsearch.js"></script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<h1 style="position: relative">Tmux Cheat Sheet & Quick Reference</h1>
+        <div class="row">
+            <div class="col-md-12">
+                <form role="search">
+                    <div id="cheat-search-input">
+                        <div class="input-group col-md-12">
+                            <input type="text" class="form-control input-lg" autocomplete="off"
+                                placeholder="Search cheats here" id="q" name="q" value="" />
+                            <span class="input-group-btn">
+                                <button id="search-btn" class="btn btn-info btn-lg" style="outline:0;" type="submit">
+                                    <i class="glyphicon glyphicon-search"></i>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-12">
+                <div style="margin-bottom: 20px;">
+                    <script async
+                        src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9609948936748481"
+                        crossorigin="anonymous"></script>
+                    <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article"
+                        data-ad-format="fluid" data-ad-client="ca-pub-9609948936748481" data-ad-slot="7923019254"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row category">
+            <div class="col-md-12">
+                <h2 class="bg-info">Sessions</h2>
+            </div>
+        </div>
+        <div class="row cheatsheet">
+            <div class="col-md-6">
+                <div class="cheat  cmd" tcs="e595779b"><span class="noselect">$ </span>tmux</div>
+                <div class="cheat  cmd" tcs="e595779b"><span class="noselect">$ </span>tmux new</div>
+                <div class="cheat  cmd" tcs="e595779b"><span class="noselect">$ </span>tmux new-session</div>
+                <div class="cheat cmd tmuxcmd" tcs="e595779b"><span class="noselect">: </span>new</div>
+                <p class="cheat" tcs="e595779b">Start a new session</p>
+                <script>
+                    tcs_index.add({ "desc": "Start a new session", "cat": "Sessions", "keywords": ["create"], "shell": ["tmux", "tmux new", "tmux new-session"], "tmuxcmd": ["new"], "shortcut": [], "tcs": "e595779b", "id": "e595779b" });
+                </script>
+                <div class="cheat  cmd" tcs="3441f6f6"><span class="noselect">$ </span>tmux new -s mysession</div>
+                <div class="cheat cmd tmuxcmd" tcs="3441f6f6"><span class="noselect">: </span>new -s mysession</div>
+                <p class="cheat" tcs="3441f6f6">Start a new session with the name <i>mysession</i></p>
+                <script>
+                    tcs_index.add({ "desc": "Start a new session with the name <i>mysession<\/i>", "cat": "Sessions", "keywords": ["create"], "shell": ["tmux new -s mysession"], "tmuxcmd": ["new -s mysession"], "shortcut": [], "tcs": "3441f6f6", "id": "3441f6f6" });
+                </script>
+                <div class="cheat  cmd" tcs="d4a3db2c"><span class="noselect">$ </span>tmux kill-ses -t mysession</div>
+                <div class="cheat  cmd" tcs="d4a3db2c"><span class="noselect">$ </span>tmux kill-session -t mysession
+                </div>
+                <p class="cheat" tcs="d4a3db2c">kill/delete session <i>mysession</i></p>
+                <script>
+                    tcs_index.add({ "desc": "kill\/delete session <i>mysession<\/i>", "cat": "Sessions", "keywords": ["terminate"], "shell": ["tmux kill-ses -t mysession", "tmux kill-session -t mysession"], "tmuxcmd": [], "shortcut": [], "tcs": "d4a3db2c", "id": "d4a3db2c" });
+                </script>
+                <div class="cheat  cmd" tcs="cd4a6f59"><span class="noselect">$ </span>tmux kill-session -a</div>
+                <p class="cheat" tcs="cd4a6f59">kill/delete all sessions but the current</p>
+                <script>
+                    tcs_index.add({ "desc": "kill\/delete all sessions but the current", "cat": "Sessions", "keywords": ["terminate"], "shell": ["tmux kill-session -a"], "tmuxcmd": [], "shortcut": [], "tcs": "cd4a6f59", "id": "cd4a6f59" });
+                </script>
+                <div class="cheat  cmd" tcs="d0f01fa6"><span class="noselect">$ </span>tmux kill-session -a -t mysession
+                </div>
+                <p class="cheat" tcs="d0f01fa6">kill/delete all sessions but <i>mysession</i></p>
+                <script>
+                    tcs_index.add({ "desc": "kill\/delete all sessions but <i>mysession<\/i>", "cat": "Sessions", "keywords": ["terminate"], "shell": ["tmux kill-session -a -t mysession"], "tmuxcmd": [], "shortcut": [], "tcs": "d0f01fa6", "id": "d0f01fa6" });
+                </script>
+                <div class="cheat shortcut" tcs="5b352506"><span class="prefix"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span>
+                    <kbd>$</kbd></div>
+                <p class="cheat" tcs="5b352506">Rename session</p>
+                <script>
+                    tcs_index.add({ "desc": "Rename session", "cat": "Sessions", "shell": [], "tmuxcmd": [], "shortcut": ["<span class=\"prefix\"><kbd>Ctrl<\/kbd> + <kbd>b<\/kbd> <\/span> <kbd>$<\/kbd>"], "tcs": "5b352506", "id": "5b352506" });
+                </script>
+                <div class="cheat shortcut" tcs="33650188"><span class="prefix"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span>
+                    <kbd>d</kbd></div>
+                <p class="cheat" tcs="33650188">Detach from session</p>
+                <script>
+                    tcs_index.add({ "desc": "Detach from session", "cat": "Sessions", "keywords": ["exit session"], "shell": [], "tmuxcmd": [], "shortcut": ["<span class=\"prefix\"><kbd>Ctrl<\/kbd> + <kbd>b<\/kbd> <\/span> <kbd>d<\/kbd>"], "tcs": "33650188", "id": "33650188" });
+                </script>
+                <div class="cheat cmd tmuxcmd" tcs="74c38879"><span class="noselect">: </span>attach -d</div>
+                <p class="cheat" tcs="74c38879">Detach others on the session (Maximize window by detach other clients)
+                </p>
+                <script>
+                    tcs_index.add({ "desc": "Detach others on the session (Maximize window by detach other clients)", "cat": "Sessions", "keywords": ["exit session", "detach others", "maximize"], "shell": [], "tmuxcmd": ["attach -d"], "shortcut": [], "tcs": "74c38879", "id": "74c38879" });
+                </script>
+            </div>
+            <div class="col-md-6">
+                <div class="cheat  cmd" tcs="a0ca8bf5"><span class="noselect">$ </span>tmux ls</div>
+                <div class="cheat  cmd" tcs="a0ca8bf5"><span class="noselect">$ </span>tmux list-sessions</div>
+                <div class="cheat shortcut" tcs="a0ca8bf5"><span class="prefix"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span>
+                    <kbd>s</kbd></div>
+                <p class="cheat" tcs="a0ca8bf5">Show all sessions</p>
+                <script>
+                    tcs_index.add({ "desc": "Show all sessions", "cat": "Sessions", "shell": ["tmux ls", "tmux list-sessions"], "tmuxcmd": [], "shortcut": ["<span class=\"prefix\"><kbd>Ctrl<\/kbd> + <kbd>b<\/kbd> <\/span> <kbd>s<\/kbd>"], "tcs": "a0ca8bf5", "id": "a0ca8bf5" });
+                </script>
+                <div class="cheat  cmd" tcs="06dae412"><span class="noselect">$ </span>tmux a</div>
+                <div class="cheat  cmd" tcs="06dae412"><span class="noselect">$ </span>tmux at</div>
+                <div class="cheat  cmd" tcs="06dae412"><span class="noselect">$ </span>tmux attach</div>
+                <div class="cheat  cmd" tcs="06dae412"><span class="noselect">$ </span>tmux attach-session</div>
+                <p class="cheat" tcs="06dae412">Attach to last session</p>
+                <script>
+                    tcs_index.add({ "desc": "Attach to last session", "cat": "Sessions", "shell": ["tmux a", "tmux at", "tmux attach", "tmux attach-session"], "tmuxcmd": [], "shortcut": [], "tcs": "06dae412", "id": "06dae412" });
+                </script>
+                <div class="cheat  cmd" tcs="cdbbbe0b"><span class="noselect">$ </span>tmux a -t mysession</div>
+                <div class="cheat  cmd" tcs="cdbbbe0b"><span class="noselect">$ </span>tmux at -t mysession</div>
+                <div class="cheat  cmd" tcs="cdbbbe0b"><span class="noselect">$ </span>tmux attach -t mysession</div>
+                <div class="cheat  cmd" tcs="cdbbbe0b"><span class="noselect">$ </span>tmux attach-session -t mysession
+                </div>
+                <p class="cheat" tcs="cdbbbe0b">Attach to a session with the name <i>mysession</i></p>
+                <script>
+                    tcs_index.add({ "desc": "Attach to a session with the name <i>mysession<\/i>", "cat": "Sessions", "shell": ["tmux a -t mysession", "tmux at -t mysession", "tmux attach -t mysession", "tmux attach-session -t mysession"], "tmuxcmd": [], "shortcut": [], "tcs": "cdbbbe0b", "id": "cdbbbe0b" });
+                </script>
+                <div class="cheat shortcut" tcs="cdb53713"><span class="prefix"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span>
+                    <kbd>w</kbd></div>
+                <p class="cheat" tcs="cdb53713">Session and Window Preview</p>
+                <script>
+                    tcs_index.add({ "desc": "Session and Window Preview", "cat": "Sessions", "keywords": ["navigate", "switch"], "shell": [], "tmuxcmd": [], "shortcut": ["<span class=\"prefix\"><kbd>Ctrl<\/kbd> + <kbd>b<\/kbd> <\/span> <kbd>w<\/kbd>"], "tcs": "cdb53713", "id": "cdb53713" });
+                </script>
+                <div class="cheat shortcut" tcs="a041fa14"><span class="prefix"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span>
+                    <kbd>(</kbd></div>
+                <p class="cheat" tcs="a041fa14">Move to previous session</p>
+                <script>
+                    tcs_index.add({ "desc": "Move to previous session", "cat": "Sessions", "keywords": ["navigate", "switch"], "shell": [], "tmuxcmd": [], "shortcut": ["<span class=\"prefix\"><kbd>Ctrl<\/kbd> + <kbd>b<\/kbd> <\/span> <kbd>(<\/kbd>"], "tcs": "a041fa14", "id": "a041fa14" });
+                </script>
+                <div class="cheat shortcut" tcs="cb250325"><span class="prefix"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span>
+                    <kbd>)</kbd></div>
+                <p class="cheat" tcs="cb250325">Move to next session</p>
+                <script>
+                    tcs_index.add({ "desc": "Move to next session", "cat": "Sessions", "keywords": ["navigate", "switch"], "shell": [], "tmuxcmd": [], "shortcut": ["<span class=\"prefix\"><kbd>Ctrl<\/kbd> + <kbd>b<\/kbd> <\/span> <kbd>)<\/kbd>"], "tcs": "cb250325", "id": "cb250325" });
+                </script>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9609948936748481"
+                    data-ad-slot="4156456698" data-ad-format="auto"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </div>
+        <div class="row category">
+            <div class="col-md-12">
+                <h2 class="bg-info">Windows</h2>
+            </div>
+        </div>
+        <div class="row cheatsheet">
+            <div class="col-md-6">
+                <div class="cheat  cmd" tcs="4209c136"><span class="noselect">$ </span>tmux new -s mysession -n mywindow
+                </div>
+                <p class="cheat" tcs="4209c136">start a new session with the name <i>mysession</i> and window
+                    <i>mywindow</i></p>
+                <script>
+                    tcs_index.add({ "desc": "start a new session with the name <i>mysession<\/i> and window <i>mywindow<\/i>", "cat": "Windows", "keywords": ["create"], "shell": ["tmux new -s mysession -n mywindow"], "tmuxcmd": [], "shortcut": [], "tcs": "4209c136", "id": "4209c136" });
+                </script>
+                <div class="cheat shortcut" tcs="07476f71"><span class="prefix"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span>
+                    <kbd>c</kbd></div>
+                <p class="cheat" tcs="07476f71">Create window</p>
+                <script>
+                    tcs_index.add({ "desc": "Create window", "cat": "Windows", "keywords": ["create new window"], "shell": [], "tmuxcmd": [], "shortcut": ["<span class=\"prefix\"><kbd>Ctrl<\/kbd> + <kbd>b<\/kbd> <\/span> <kbd>c<\/kbd>"], "tcs": "07476f71", "id": "07476f71" });
+                </script>
+                <div class="cheat shortcut" tcs="1d525ac4"><span class="prefix"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span>
+                    <kbd>,</kbd></div>
+                <p class="cheat" tcs="1d525ac4">Rename current window</p>
+                <script>
+                    tcs_index.add({ "desc": "Rename current window", "cat": "Windows", "shell": [], "tmuxcmd": [], "shortcut": ["<span class=\"prefix\"><kbd>Ctrl<\/kbd> + <kbd>b<\/kbd> <\/span> <kbd>,<\/kbd>"], "tcs": "1d525ac4", "id": "1d525ac4" });
+                </script>
+                <div class="cheat shortcut" tcs="18ed4612"><span class="prefix"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span>
+                    <kbd>&</kbd></div>
+                <p class="cheat" tcs="18ed4612">Close current window</p>
+                <script>
+                    tcs_index.add({ "desc": "Close current window", "cat": "Windows", "keywords": ["kill window", "delete window"], "shell": [], "tmuxcmd": [], "shortcut": ["<span class=\"prefix\"><kbd>Ctrl<\/kbd> + <kbd>b<\/kbd> <\/span> <kbd>&<\/kbd>"], "tcs": "18ed4612", "id": "18ed4612" });
+                </script>
+                <div class="cheat shortcut" tcs="b6979f64"><span class="prefix"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span>
+                    <kbd>w</kbd></div>
+                <p class="cheat" tcs="b6979f64">List windows</p>
+                <script>
+                    tcs_index.add({ "desc": "List windows", "cat": "Windows", "keywords": ["list window", "show window"], "shell": [], "tmuxcmd": [], "shortcut": ["<span class=\"prefix\"><kbd>Ctrl<\/kbd> + <kbd>b<\/kbd> <\/span> <kbd>w<\/kbd>"], "tcs": "b6979f64", "id": "b6979f64" });
+                </script>
+                <div class="cheat shortcut" tcs="11569f94"><span class="prefix"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span>
+                    <kbd>p</kbd></div>
+                <p class="cheat" tcs="11569f94">Previous window</p>
+                <script>
+                    tcs_index.add({ "desc": "Previous window", "cat": "Windows", "keywords": ["navigate"], "shell": [], "tmuxcmd": [], "shortcut": ["<span class=\"prefix\"><kbd>Ctrl<\/kbd> + <kbd>b<\/kbd> <\/span> <kbd>p<\/kbd>"], "tcs": "11569f94", "id": "11569f94" });
+                </script>
+            </div>
+            <div class="col-md-6">
+                <div class="cheat shortcut" tcs="9849dfbe"><span class="prefix"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span>
+                    <kbd>n</kbd></div>
+                <p class="cheat" tcs="9849dfbe">Next window</p>
+                <script>
+                    tcs_index.add({ "desc": "Next window", "cat": "Windows", "keywords": ["navigate"], "shell": [], "tmuxcmd": [], "shortcut": ["<span class=\"prefix\"><kbd>Ctrl<\/kbd> + <kbd>b<\/kbd> <\/span> <kbd>n<\/kbd>"], "tcs": "9849dfbe", "id": "9849dfbe" });
+                </script>
+                <div class="cheat shortcut" tcs="7995714c"><span class="prefix"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span>
+                    <kbd>0</kbd> ... <kbd>9</kbd></div>
+                <p class="cheat" tcs="7995714c">Switch/select window by number</p>
+                <script>
+                    tcs_index.add({ "desc": "Switch\/select window by number", "cat": "Windows", "shell": [], "tmuxcmd": [], "shortcut": ["<span class=\"prefix\"><kbd>Ctrl<\/kbd> + <kbd>b<\/kbd> <\/span> <kbd>0<\/kbd> ... <kbd>9<\/kbd>"], "tcs": "7995714c", "id": "7995714c" });
+                </script>
+                <div class="cheat shortcut" tcs="0ac4f84d"><span class="prefix"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span>
+                    <kbd>l</kbd></div>
+                <p class="cheat" tcs="0ac4f84d">Toggle last active window</p>
+                <script>
+                    tcs_index.add({ "desc": "Toggle last active window", "cat": "Windows", "shell": [], "tmuxcmd": [], "shortcut": ["<span class=\"prefix\"><kbd>Ctrl<\/kbd> + <kbd>b<\/kbd> <\/span> <kbd>l<\/kbd>"], "tcs": "0ac4f84d", "id": "0ac4f84d" });
+                </script>
+                <div class="cheat cmd tmuxcmd" tcs="0af11a17"><span class="noselect">: </span>swap-window -s 2 -t 1
+                </div>
+                <p class="cheat" tcs="0af11a17">Reorder window, swap window number 2(src) and 1(dst)</p>
+                <script>
+                    tcs_index.add({ "desc": "Reorder window, swap window number 2(src) and 1(dst)", "cat": "Windows", "shell": [], "tmuxcmd": ["swap-window -s 2 -t 1"], "shortcut": [], "tcs": "0af11a17", "id": "0af11a17" });
+                </script>
+                <div class="cheat cmd tmuxcmd" tcs="c2241854"><span class="noselect">: </span>swap-window -t -1</div>
+                <p class="cheat" tcs="c2241854">Move current window to the left by one position</p>
+                <script>
+                    tcs_index.add({ "desc": "Move current window to the left by one position", "cat": "Windows", "shell": [], "tmuxcmd": ["swap-window -t -1"], "shortcut": [], "tcs": "c2241854", "id": "c2241854" });
+                </script>
+            </div>
+        </div>
+        <div class="row category">
+            <div class="col-md-12">
+                <h2 class="bg-info">Panes</h2>
+            </div>
+        </div>
+        <div class="row cheatsheet">
+            <div class="col-md-6">
+                <div class="cheat shortcut" tcs="401b1d9f"><span class="prefix"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span>
+                    <kbd>;</kbd></div>
+                <p class="cheat" tcs="401b1d9f">Toggle last active pane</p>
+                <script>
+                    tcs_index.add({ "desc": "Toggle last active pane", "cat": "Panes", "shell": [], "tmuxcmd": [], "shortcut": ["<span class=\"prefix\"><kbd>Ctrl<\/kbd> + <kbd>b<\/kbd> <\/span> <kbd>;<\/kbd>"], "tcs": "401b1d9f", "id": "401b1d9f" });
+                </script>
+                <div class="cheat shortcut" tcs="a4a426fe"><span class="prefix"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span>
+                    <kbd>%</kbd></div>
+                <p class="cheat" tcs="a4a426fe">Split pane with horizontal layout</p>
+                <script>
+                    tcs_index.add({ "desc": "Split pane with horizontal layout", "cat": "Panes", "shell": [], "tmuxcmd": [], "shortcut": ["<span class=\"prefix\"><kbd>Ctrl<\/kbd> + <kbd>b<\/kbd> <\/span> <kbd>%<\/kbd>"], "tcs": "a4a426fe", "id": "a4a426fe" });
+                </script>
+                <div class="cheat shortcut" tcs="f0e544db"><span class="prefix"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span>
+                    <kbd>"</kbd></div>
+                <p class="cheat" tcs="f0e544db">Split pane with vertical layout</p>
+                <script>
+                    tcs_index.add({ "desc": "Split pane with vertical layout", "cat": "Panes", "shell": [], "tmuxcmd": [], "shortcut": ["<span class=\"prefix\"><kbd>Ctrl<\/kbd> + <kbd>b<\/kbd> <\/span> <kbd>\"<\/kbd>"], "tcs": "f0e544db", "id": "f0e544db" });
+                </script>
+                <div class="cheat shortcut" tcs="5259967c"><span class="prefix"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span>
+                    <kbd>{</kbd></div>
+                <p class="cheat" tcs="5259967c">Move the current pane left</p>
+                <script>
+                    tcs_index.add({ "desc": "Move the current pane left", "cat": "Panes", "shell": [], "tmuxcmd": [], "shortcut": ["<span class=\"prefix\"><kbd>Ctrl<\/kbd> + <kbd>b<\/kbd> <\/span> <kbd>{<\/kbd>"], "tcs": "5259967c", "id": "5259967c" });
+                </script>
+                <div class="cheat shortcut" tcs="e8d90314"><span class="prefix"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span>
+                    <kbd>}</kbd></div>
+                <p class="cheat" tcs="e8d90314">Move the current pane right</p>
+                <script>
+                    tcs_index.add({ "desc": "Move the current pane right", "cat": "Panes", "shell": [], "tmuxcmd": [], "shortcut": ["<span class=\"prefix\"><kbd>Ctrl<\/kbd> + <kbd>b<\/kbd> <\/span> <kbd>}<\/kbd>"], "tcs": "e8d90314", "id": "e8d90314" });
+                </script>
+                <div class="cheat shortcut" tcs="353793b8"><span class="prefix"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span>
+                    <kbd><i class="fa fa-long-arrow-up"></i></kbd></div>
+                <div class="cheat shortcut" tcs="353793b8"><span class="prefix"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span>
+                    <kbd><i class="fa fa-long-arrow-down"></i></kbd></div>
+                <div class="cheat shortcut" tcs="353793b8"><span class="prefix"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span>
+                    <kbd><i class="fa fa-long-arrow-right"></i></kbd></div>
+                <div class="cheat shortcut" tcs="353793b8"><span class="prefix"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span>
+                    <kbd><i class="fa fa-long-arrow-left"></i></kbd></div>
+                <p class="cheat" tcs="353793b8">Switch to pane to the direction</p>
+                <script>
+                    tcs_index.add({ "desc": "Switch to pane to the direction", "cat": "Panes", "keywords": "navigate", "shell": [], "tmuxcmd": [], "shortcut": ["<span class=\"prefix\"><kbd>Ctrl<\/kbd> + <kbd>b<\/kbd> <\/span> <kbd><i class=\"fa fa-long-arrow-up\"><\/i><\/kbd>", "<span class=\"prefix\"><kbd>Ctrl<\/kbd> + <kbd>b<\/kbd> <\/span> <kbd><i class=\"fa fa-long-arrow-down\"><\/i><\/kbd>", "<span class=\"prefix\"><kbd>Ctrl<\/kbd> + <kbd>b<\/kbd> <\/span> <kbd><i class=\"fa fa-long-arrow-right\"><\/i><\/kbd>", "<span class=\"prefix\"><kbd>Ctrl<\/kbd> + <kbd>b<\/kbd> <\/span> <kbd><i class=\"fa fa-long-arrow-left\"><\/i><\/kbd>"], "tcs": "353793b8", "id": "353793b8" });
+                </script>
+                <div class="cheat cmd tmuxcmd" tcs="dcebd6c9"><span class="noselect">: </span>setw synchronize-panes
+                </div>
+                <p class="cheat" tcs="dcebd6c9">Toggle synchronize-panes(send command to all panes)</p>
+                <script>
+                    tcs_index.add({ "desc": "Toggle synchronize-panes(send command to all panes)", "cat": "Panes", "shell": [], "tmuxcmd": ["setw synchronize-panes"], "shortcut": [], "tcs": "dcebd6c9", "id": "dcebd6c9" });
+                </script>
+                <div class="cheat shortcut" tcs="cc6073cd"><span class="prefix"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span>
+                    <kbd>Spacebar</kbd></div>
+                <p class="cheat" tcs="cc6073cd">Toggle between pane layouts</p>
+                <script>
+                    tcs_index.add({ "desc": "Toggle between pane layouts", "cat": "Panes", "shell": [], "tmuxcmd": [], "shortcut": ["<span class=\"prefix\"><kbd>Ctrl<\/kbd> + <kbd>b<\/kbd> <\/span> <kbd>Spacebar<\/kbd>"], "tcs": "cc6073cd", "id": "cc6073cd" });
+                </script>
+                <div class="cheat shortcut" tcs="27cd8aef"><span class="prefix"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span>
+                    <kbd>o</kbd></div>
+                <p class="cheat" tcs="27cd8aef">Switch to next pane</p>
+                <script>
+                    tcs_index.add({ "desc": "Switch to next pane", "cat": "Panes", "shell": [], "tmuxcmd": [], "shortcut": ["<span class=\"prefix\"><kbd>Ctrl<\/kbd> + <kbd>b<\/kbd> <\/span> <kbd>o<\/kbd>"], "tcs": "27cd8aef", "id": "27cd8aef" });
+                </script>
+            </div>
+            <div class="col-md-6">
+                <div class="cheat shortcut" tcs="01335f0b"><span class="prefix"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span>
+                    <kbd>q</kbd></div>
+                <p class="cheat" tcs="01335f0b">Show pane numbers</p>
+                <script>
+                    tcs_index.add({ "desc": "Show pane numbers", "cat": "Panes", "shell": [], "tmuxcmd": [], "shortcut": ["<span class=\"prefix\"><kbd>Ctrl<\/kbd> + <kbd>b<\/kbd> <\/span> <kbd>q<\/kbd>"], "tcs": "01335f0b", "id": "01335f0b" });
+                </script>
+                <div class="cheat shortcut" tcs="39eb3e75"><span class="prefix"><kbd>Ctrl</kbd> + <kbd>b</kbd>
+                    </span><span class="kbd-margin"><kbd>q</kbd> </span><kbd>0</kbd> ... <kbd>9</kbd></div>
+                <p class="cheat" tcs="39eb3e75">Switch/select pane by number</p>
+                <script>
+                    tcs_index.add({ "desc": "Switch\/select pane by number", "cat": "Panes", "shell": [], "tmuxcmd": [], "shortcut": ["<span class=\"prefix\"><kbd>Ctrl<\/kbd> + <kbd>b<\/kbd> <\/span><span class=\"kbd-margin\"><kbd>q<\/kbd> <\/span><kbd>0<\/kbd> ... <kbd>9<\/kbd>"], "tcs": "39eb3e75", "id": "39eb3e75" });
+                </script>
+                <div class="cheat shortcut" tcs="f18cb01c"><span class="prefix"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span>
+                    <kbd>z</kbd></div>
+                <p class="cheat" tcs="f18cb01c">Toggle pane zoom</p>
+                <script>
+                    tcs_index.add({ "desc": "Toggle pane zoom", "cat": "Panes", "shell": [], "tmuxcmd": [], "shortcut": ["<span class=\"prefix\"><kbd>Ctrl<\/kbd> + <kbd>b<\/kbd> <\/span> <kbd>z<\/kbd>"], "tcs": "f18cb01c", "id": "f18cb01c" });
+                </script>
+                <div class="cheat shortcut" tcs="1c102d89"><span class="prefix"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span>
+                    <kbd>!</kbd></div>
+                <p class="cheat" tcs="1c102d89">Convert pane into a window</p>
+                <script>
+                    tcs_index.add({ "desc": "Convert pane into a window", "cat": "Panes", "shell": [], "tmuxcmd": [], "shortcut": ["<span class=\"prefix\"><kbd>Ctrl<\/kbd> + <kbd>b<\/kbd> <\/span> <kbd>!<\/kbd>"], "tcs": "1c102d89", "id": "1c102d89" });
+                </script>
+                <div class="cheat shortcut" tcs="1cccbc19"><span class="prefix" style="margin-right:0"><kbd>Ctrl</kbd> +
+                        <kbd>b</kbd> </span> + <kbd><i class="fa fa-long-arrow-up"></i></kbd></div>
+                <div class="cheat shortcut" tcs="1cccbc19"><span class="prefix"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span>
+                    <kbd>Ctrl</kbd> + <kbd><i class="fa fa-long-arrow-up"></i></kbd></div>
+                <div class="cheat shortcut" tcs="1cccbc19"><span class="prefix" style="margin-right:0"><kbd>Ctrl</kbd> +
+                        <kbd>b</kbd> </span> + <kbd><i class="fa fa-long-arrow-down"></i></kbd></div>
+                <div class="cheat shortcut" tcs="1cccbc19"><span class="prefix"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span>
+                    <kbd>Ctrl</kbd> + <kbd><i class="fa fa-long-arrow-down"></i></kbd></div>
+                <p class="cheat" tcs="1cccbc19">Resize current pane height(holding second key is optional)</p>
+                <script>
+                    tcs_index.add({ "desc": "Resize current pane height(holding second key is optional)", "cat": "Panes", "keywords": ["resize up", "resize down"], "shell": [], "tmuxcmd": [], "shortcut": ["<span class=\"prefix\" style=\"margin-right:0\"><kbd>Ctrl<\/kbd> + <kbd>b<\/kbd> <\/span> + <kbd><i class=\"fa fa-long-arrow-up\"><\/i><\/kbd>", "<span class=\"prefix\"><kbd>Ctrl<\/kbd> + <kbd>b<\/kbd> <\/span> <kbd>Ctrl<\/kbd> + <kbd><i class=\"fa fa-long-arrow-up\"><\/i><\/kbd>", "<span class=\"prefix\" style=\"margin-right:0\"><kbd>Ctrl<\/kbd> + <kbd>b<\/kbd> <\/span> + <kbd><i class=\"fa fa-long-arrow-down\"><\/i><\/kbd>", "<span class=\"prefix\"><kbd>Ctrl<\/kbd> + <kbd>b<\/kbd> <\/span> <kbd>Ctrl<\/kbd> + <kbd><i class=\"fa fa-long-arrow-down\"><\/i><\/kbd>"], "tcs": "1cccbc19", "id": "1cccbc19" });
+                </script>
+                <div class="cheat shortcut" tcs="672f30c0"><span class="prefix" style="margin-right:0"><kbd>Ctrl</kbd> +
+                        <kbd>b</kbd> </span> + <kbd><i class="fa fa-long-arrow-right"></i></kbd></div>
+                <div class="cheat shortcut" tcs="672f30c0"><span class="prefix"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span>
+                    <kbd>Ctrl</kbd> + <kbd><i class="fa fa-long-arrow-right"></i></kbd></div>
+                <div class="cheat shortcut" tcs="672f30c0"><span class="prefix" style="margin-right:0"><kbd>Ctrl</kbd> +
+                        <kbd>b</kbd> </span> + <kbd><i class="fa fa-long-arrow-left"></i></kbd></div>
+                <div class="cheat shortcut" tcs="672f30c0"><span class="prefix"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span>
+                    <kbd>Ctrl</kbd> + <kbd><i class="fa fa-long-arrow-left"></i></kbd></div>
+                <p class="cheat" tcs="672f30c0">Resize current pane width(holding second key is optional)</p>
+                <script>
+                    tcs_index.add({ "desc": "Resize current pane width(holding second key is optional)", "cat": "Panes", "keywords": ["resize left", "resize right"], "shell": [], "tmuxcmd": [], "shortcut": ["<span class=\"prefix\" style=\"margin-right:0\"><kbd>Ctrl<\/kbd> + <kbd>b<\/kbd> <\/span> + <kbd><i class=\"fa fa-long-arrow-right\"><\/i><\/kbd>", "<span class=\"prefix\"><kbd>Ctrl<\/kbd> + <kbd>b<\/kbd> <\/span> <kbd>Ctrl<\/kbd> + <kbd><i class=\"fa fa-long-arrow-right\"><\/i><\/kbd>", "<span class=\"prefix\" style=\"margin-right:0\"><kbd>Ctrl<\/kbd> + <kbd>b<\/kbd> <\/span> + <kbd><i class=\"fa fa-long-arrow-left\"><\/i><\/kbd>", "<span class=\"prefix\"><kbd>Ctrl<\/kbd> + <kbd>b<\/kbd> <\/span> <kbd>Ctrl<\/kbd> + <kbd><i class=\"fa fa-long-arrow-left\"><\/i><\/kbd>"], "tcs": "672f30c0", "id": "672f30c0" });
+                </script>
+                <div class="cheat shortcut" tcs="d23a6791"><span class="prefix"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span>
+                    <kbd>x</kbd></div>
+                <p class="cheat" tcs="d23a6791">Close current pane</p>
+                <script>
+                    tcs_index.add({ "desc": "Close current pane", "cat": "Panes", "keywords": ["kill pane", "delete pane"], "shell": [], "tmuxcmd": [], "shortcut": ["<span class=\"prefix\"><kbd>Ctrl<\/kbd> + <kbd>b<\/kbd> <\/span> <kbd>x<\/kbd>"], "tcs": "d23a6791", "id": "d23a6791" });
+                </script>
+            </div>
+        </div>
+        <div class="row category">
+            <div class="col-md-12">
+                <h2 class="bg-info">Copy Mode</h2>
+            </div>
+        </div>
+        <div class="row cheatsheet">
+            <div class="col-md-6">
+                <div class="cheat cmd tmuxcmd" tcs="6760c67e"><span class="noselect">: </span>setw -g mode-keys vi</div>
+                <p class="cheat" tcs="6760c67e">use vi keys in buffer</p>
+                <script>
+                    tcs_index.add({ "desc": "use vi keys in buffer", "cat": "Copy Mode", "shell": [], "tmuxcmd": ["setw -g mode-keys vi"], "shortcut": [], "tcs": "6760c67e", "id": "6760c67e" });
+                </script>
+                <div class="cheat shortcut" tcs="31de0710"><span class="prefix"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span>
+                    <kbd>[</kbd></div>
+                <p class="cheat" tcs="31de0710">Enter copy mode</p>
+                <script>
+                    tcs_index.add({ "desc": "Enter copy mode", "cat": "Copy Mode", "shell": [], "tmuxcmd": [], "shortcut": ["<span class=\"prefix\"><kbd>Ctrl<\/kbd> + <kbd>b<\/kbd> <\/span> <kbd>[<\/kbd>"], "tcs": "31de0710", "id": "31de0710" });
+                </script>
+                <div class="cheat shortcut" tcs="b7766f76"><span class="prefix"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span>
+                    <kbd>PgUp</kbd></div>
+                <p class="cheat" tcs="b7766f76">Enter copy mode and scroll one page up</p>
+                <script>
+                    tcs_index.add({ "desc": "Enter copy mode and scroll one page up", "cat": "Copy Mode", "shell": [], "tmuxcmd": [], "shortcut": ["<span class=\"prefix\"><kbd>Ctrl<\/kbd> + <kbd>b<\/kbd> <\/span> <kbd>PgUp<\/kbd>"], "tcs": "b7766f76", "id": "b7766f76" });
+                </script>
+                <div class="cheat shortcut" tcs="8823da0f"><kbd>q</kbd></div>
+                <p class="cheat" tcs="8823da0f">Quit mode</p>
+                <script>
+                    tcs_index.add({ "desc": "Quit mode", "cat": "Copy Mode", "shell": [], "tmuxcmd": [], "shortcut": ["<kbd>q<\/kbd>"], "tcs": "8823da0f", "id": "8823da0f" });
+                </script>
+                <div class="cheat shortcut" tcs="a8a3fbc3"><kbd>g</kbd></div>
+                <p class="cheat" tcs="a8a3fbc3">Go to top line</p>
+                <script>
+                    tcs_index.add({ "desc": "Go to top line", "cat": "Copy Mode", "shell": [], "tmuxcmd": [], "shortcut": ["<kbd>g<\/kbd>"], "tcs": "a8a3fbc3", "id": "a8a3fbc3" });
+                </script>
+                <div class="cheat shortcut" tcs="81316c2a"><kbd>G</kbd></div>
+                <p class="cheat" tcs="81316c2a">Go to bottom line</p>
+                <script>
+                    tcs_index.add({ "desc": "Go to bottom line", "cat": "Copy Mode", "shell": [], "tmuxcmd": [], "shortcut": ["<kbd>G<\/kbd>"], "tcs": "81316c2a", "id": "81316c2a" });
+                </script>
+                <div class="cheat shortcut" tcs="1c59042f"><kbd><i class="fa fa-long-arrow-up"></i></kbd></div>
+                <p class="cheat" tcs="1c59042f">Scroll up</p>
+                <script>
+                    tcs_index.add({ "desc": "Scroll up", "cat": "Copy Mode", "shell": [], "tmuxcmd": [], "shortcut": ["<kbd><i class=\"fa fa-long-arrow-up\"><\/i><\/kbd>"], "tcs": "1c59042f", "id": "1c59042f" });
+                </script>
+                <div class="cheat shortcut" tcs="95394867"><kbd><i class="fa fa-long-arrow-down"></i></kbd></div>
+                <p class="cheat" tcs="95394867">Scroll down</p>
+                <script>
+                    tcs_index.add({ "desc": "Scroll down", "cat": "Copy Mode", "shell": [], "tmuxcmd": [], "shortcut": ["<kbd><i class=\"fa fa-long-arrow-down\"><\/i><\/kbd>"], "tcs": "95394867", "id": "95394867" });
+                </script>
+                <div class="cheat shortcut" tcs="0c8a86e2"><kbd>h</kbd></div>
+                <p class="cheat" tcs="0c8a86e2">Move cursor left</p>
+                <script>
+                    tcs_index.add({ "desc": "Move cursor left", "cat": "Copy Mode", "shell": [], "tmuxcmd": [], "shortcut": ["<kbd>h<\/kbd>"], "tcs": "0c8a86e2", "id": "0c8a86e2" });
+                </script>
+                <div class="cheat shortcut" tcs="5d53b95f"><kbd>j</kbd></div>
+                <p class="cheat" tcs="5d53b95f">Move cursor down</p>
+                <script>
+                    tcs_index.add({ "desc": "Move cursor down", "cat": "Copy Mode", "shell": [], "tmuxcmd": [], "shortcut": ["<kbd>j<\/kbd>"], "tcs": "5d53b95f", "id": "5d53b95f" });
+                </script>
+                <div class="cheat shortcut" tcs="8b0df978"><kbd>k</kbd></div>
+                <p class="cheat" tcs="8b0df978">Move cursor up</p>
+                <script>
+                    tcs_index.add({ "desc": "Move cursor up", "cat": "Copy Mode", "shell": [], "tmuxcmd": [], "shortcut": ["<kbd>k<\/kbd>"], "tcs": "8b0df978", "id": "8b0df978" });
+                </script>
+                <div class="cheat shortcut" tcs="1f90394d"><kbd>l</kbd></div>
+                <p class="cheat" tcs="1f90394d">Move cursor right</p>
+                <script>
+                    tcs_index.add({ "desc": "Move cursor right", "cat": "Copy Mode", "shell": [], "tmuxcmd": [], "shortcut": ["<kbd>l<\/kbd>"], "tcs": "1f90394d", "id": "1f90394d" });
+                </script>
+                <div class="cheat shortcut" tcs="2c55dd92"><kbd>w</kbd></div>
+                <p class="cheat" tcs="2c55dd92">Move cursor forward one word at a time</p>
+                <script>
+                    tcs_index.add({ "desc": "Move cursor forward one word at a time", "cat": "Copy Mode", "shell": [], "tmuxcmd": [], "shortcut": ["<kbd>w<\/kbd>"], "tcs": "2c55dd92", "id": "2c55dd92" });
+                </script>
+                <div class="cheat shortcut" tcs="4ab84961"><kbd>b</kbd></div>
+                <p class="cheat" tcs="4ab84961">Move cursor backward one word at a time</p>
+                <script>
+                    tcs_index.add({ "desc": "Move cursor backward one word at a time", "cat": "Copy Mode", "shell": [], "tmuxcmd": [], "shortcut": ["<kbd>b<\/kbd>"], "tcs": "4ab84961", "id": "4ab84961" });
+                </script>
+            </div>
+            <div class="col-md-6">
+                <div class="cheat shortcut" tcs="7f4e94bf"><kbd>/</kbd></div>
+                <p class="cheat" tcs="7f4e94bf">Search forward</p>
+                <script>
+                    tcs_index.add({ "desc": "Search forward", "cat": "Copy Mode", "shell": [], "tmuxcmd": [], "shortcut": ["<kbd>\/<\/kbd>"], "tcs": "7f4e94bf", "id": "7f4e94bf" });
+                </script>
+                <div class="cheat shortcut" tcs="bd976ea2"><kbd>?</kbd></div>
+                <p class="cheat" tcs="bd976ea2">Search backward</p>
+                <script>
+                    tcs_index.add({ "desc": "Search backward", "cat": "Copy Mode", "shell": [], "tmuxcmd": [], "shortcut": ["<kbd>?<\/kbd>"], "tcs": "bd976ea2", "id": "bd976ea2" });
+                </script>
+                <div class="cheat shortcut" tcs="65b357ab"><kbd>n</kbd></div>
+                <p class="cheat" tcs="65b357ab">Next keyword occurance</p>
+                <script>
+                    tcs_index.add({ "desc": "Next keyword occurance", "cat": "Copy Mode", "shell": [], "tmuxcmd": [], "shortcut": ["<kbd>n<\/kbd>"], "tcs": "65b357ab", "id": "65b357ab" });
+                </script>
+                <div class="cheat shortcut" tcs="e41933e9"><kbd>N</kbd></div>
+                <p class="cheat" tcs="e41933e9">Previous keyword occurance</p>
+                <script>
+                    tcs_index.add({ "desc": "Previous keyword occurance", "cat": "Copy Mode", "shell": [], "tmuxcmd": [], "shortcut": ["<kbd>N<\/kbd>"], "tcs": "e41933e9", "id": "e41933e9" });
+                </script>
+                <div class="cheat shortcut" tcs="b37413b6"><kbd>Spacebar</kbd></div>
+                <p class="cheat" tcs="b37413b6">Start selection</p>
+                <script>
+                    tcs_index.add({ "desc": "Start selection", "cat": "Copy Mode", "shell": [], "tmuxcmd": [], "shortcut": ["<kbd>Spacebar<\/kbd>"], "tcs": "b37413b6", "id": "b37413b6" });
+                </script>
+                <div class="cheat shortcut" tcs="912bcc43"><kbd>Esc</kbd></div>
+                <p class="cheat" tcs="912bcc43">Clear selection</p>
+                <script>
+                    tcs_index.add({ "desc": "Clear selection", "cat": "Copy Mode", "shell": [], "tmuxcmd": [], "shortcut": ["<kbd>Esc<\/kbd>"], "tcs": "912bcc43", "id": "912bcc43" });
+                </script>
+                <div class="cheat shortcut" tcs="b13dd57e"><kbd>Enter</kbd></div>
+                <p class="cheat" tcs="b13dd57e">Copy selection</p>
+                <script>
+                    tcs_index.add({ "desc": "Copy selection", "cat": "Copy Mode", "shell": [], "tmuxcmd": [], "shortcut": ["<kbd>Enter<\/kbd>"], "tcs": "b13dd57e", "id": "b13dd57e" });
+                </script>
+                <div class="cheat shortcut" tcs="af698827"><span class="prefix"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span>
+                    <kbd>]</kbd></div>
+                <p class="cheat" tcs="af698827">Paste contents of buffer_0</p>
+                <script>
+                    tcs_index.add({ "desc": "Paste contents of buffer_0", "cat": "Copy Mode", "shell": [], "tmuxcmd": [], "shortcut": ["<span class=\"prefix\"><kbd>Ctrl<\/kbd> + <kbd>b<\/kbd> <\/span> <kbd>]<\/kbd>"], "tcs": "af698827", "id": "af698827" });
+                </script>
+                <div class="cheat cmd tmuxcmd" tcs="e5f0bbea"><span class="noselect">: </span>show-buffer</div>
+                <p class="cheat" tcs="e5f0bbea">display buffer_0 contents</p>
+                <script>
+                    tcs_index.add({ "desc": "display buffer_0 contents", "cat": "Copy Mode", "shell": [], "tmuxcmd": ["show-buffer"], "shortcut": [], "tcs": "e5f0bbea", "id": "e5f0bbea" });
+                </script>
+                <div class="cheat cmd tmuxcmd" tcs="0f982cfe"><span class="noselect">: </span>capture-pane</div>
+                <p class="cheat" tcs="0f982cfe">copy entire visible contents of pane to a buffer</p>
+                <script>
+                    tcs_index.add({ "desc": "copy entire visible contents of pane to a buffer", "cat": "Copy Mode", "shell": [], "tmuxcmd": ["capture-pane"], "shortcut": [], "tcs": "0f982cfe", "id": "0f982cfe" });
+                </script>
+                <div class="cheat cmd tmuxcmd" tcs="78f702a9"><span class="noselect">: </span>list-buffers</div>
+                <p class="cheat" tcs="78f702a9">Show all buffers</p>
+                <script>
+                    tcs_index.add({ "desc": "Show all buffers", "cat": "Copy Mode", "shell": [], "tmuxcmd": ["list-buffers"], "shortcut": [], "tcs": "78f702a9", "id": "78f702a9" });
+                </script>
+                <div class="cheat cmd tmuxcmd" tcs="29861618"><span class="noselect">: </span>choose-buffer</div>
+                <p class="cheat" tcs="29861618">Show all buffers and paste selected</p>
+                <script>
+                    tcs_index.add({ "desc": "Show all buffers and paste selected", "cat": "Copy Mode", "shell": [], "tmuxcmd": ["choose-buffer"], "shortcut": [], "tcs": "29861618", "id": "29861618" });
+                </script>
+                <div class="cheat cmd tmuxcmd" tcs="52b3dd3f"><span class="noselect">: </span>save-buffer buf.txt</div>
+                <p class="cheat" tcs="52b3dd3f">Save buffer contents to <i>buf.txt</i></p>
+                <script>
+                    tcs_index.add({ "desc": "Save buffer contents to <i>buf.txt<\/i>", "cat": "Copy Mode", "shell": [], "tmuxcmd": ["save-buffer buf.txt"], "shortcut": [], "tcs": "52b3dd3f", "id": "52b3dd3f" });
+                </script>
+                <div class="cheat cmd tmuxcmd" tcs="f5b0ce70"><span class="noselect">: </span>delete-buffer -b 1</div>
+                <p class="cheat" tcs="f5b0ce70">delete buffer_1</p>
+                <script>
+                    tcs_index.add({ "desc": "delete buffer_1", "cat": "Copy Mode", "shell": [], "tmuxcmd": ["delete-buffer -b 1"], "shortcut": [], "tcs": "f5b0ce70", "id": "f5b0ce70" });
+                </script>
+            </div>
+        </div>
+        <div class="row category">
+            <div class="col-md-12">
+                <h2 class="bg-info">Misc</h2>
+            </div>
+        </div>
+        <div class="row cheatsheet">
+            <div class="col-md-6">
+                <div class="cheat shortcut" tcs="2f3b1140"><span class="prefix"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span>
+                    <kbd>:</kbd></div>
+                <p class="cheat" tcs="2f3b1140">Enter command mode</p>
+                <script>
+                    tcs_index.add({ "desc": "Enter command mode", "cat": "Misc", "shell": [], "tmuxcmd": [], "shortcut": ["<span class=\"prefix\"><kbd>Ctrl<\/kbd> + <kbd>b<\/kbd> <\/span> <kbd>:<\/kbd>"], "tcs": "2f3b1140", "id": "2f3b1140" });
+                </script>
+                <div class="cheat cmd tmuxcmd" tcs="5a55ea0b"><span class="noselect">: </span>set -g OPTION</div>
+                <p class="cheat" tcs="5a55ea0b">Set OPTION for all sessions</p>
+                <script>
+                    tcs_index.add({ "desc": "Set OPTION for all sessions", "cat": "Misc", "shell": [], "tmuxcmd": ["set -g OPTION"], "shortcut": [], "tcs": "5a55ea0b", "id": "5a55ea0b" });
+                </script>
+            </div>
+            <div class="col-md-6">
+                <div class="cheat cmd tmuxcmd" tcs="9fa0335f"><span class="noselect">: </span>setw -g OPTION</div>
+                <p class="cheat" tcs="9fa0335f">Set OPTION for all windows</p>
+                <script>
+                    tcs_index.add({ "desc": "Set OPTION for all windows", "cat": "Misc", "shell": [], "tmuxcmd": ["setw -g OPTION"], "shortcut": [], "tcs": "9fa0335f", "id": "9fa0335f" });
+                </script>
+                <div class="cheat cmd tmuxcmd" tcs="a35d7d27"><span class="noselect">: </span>set mouse on</div>
+                <p class="cheat" tcs="a35d7d27">Enable mouse mode</p>
+                <script>
+                    tcs_index.add({ "desc": "Enable mouse mode", "cat": "Misc", "shell": [], "tmuxcmd": ["set mouse on"], "shortcut": [], "tcs": "a35d7d27", "id": "a35d7d27" });
+                </script>
+            </div>
+        </div>
+        <div class="row category">
+            <div class="col-md-12">
+                <h2 class="bg-info">Help</h2>
+            </div>
+        </div>
+        <div class="row cheatsheet">
+            <div class="col-md-6">
+                <div class="cheat  cmd" tcs="80f52be9"><span class="noselect">$ </span>tmux list-keys</div>
+                <div class="cheat cmd tmuxcmd" tcs="80f52be9"><span class="noselect">: </span>list-keys</div>
+                <div class="cheat shortcut" tcs="80f52be9"><span class="prefix"><kbd>Ctrl</kbd> + <kbd>b</kbd> </span>
+                    <kbd>?</kbd></div>
+                <p class="cheat" tcs="80f52be9">List key bindings(shortcuts)</p>
+                <script>
+                    tcs_index.add({ "desc": "List key bindings(shortcuts)", "cat": "Help", "shell": ["tmux list-keys"], "tmuxcmd": ["list-keys"], "shortcut": ["<span class=\"prefix\"><kbd>Ctrl<\/kbd> + <kbd>b<\/kbd> <\/span> <kbd>?<\/kbd>"], "tcs": "80f52be9", "id": "80f52be9" });
+                </script>
+            </div>
+            <div class="col-md-6">
+                <div class="cheat  cmd" tcs="4f44313c"><span class="noselect">$ </span>tmux info</div>
+                <p class="cheat" tcs="4f44313c">Show every session, window, pane, etc...</p>
+                <script>
+                    tcs_index.add({ "desc": "Show every session, window, pane, etc...", "cat": "Help", "shell": ["tmux info"], "tmuxcmd": [], "shortcut": [], "tcs": "4f44313c", "id": "4f44313c" });
+                </script>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9609948936748481"
+                    data-ad-slot="1063389498" data-ad-format="auto"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </div>
+
+
+
+        <div class="row" id="cheats">
+            <div class="col-md-12">
+            </div>
+        </div>
+
+    </div>
+    <!-- /container -->
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="/js/rrssb.min.js"></script>
+
+</body>
+
+</html>
