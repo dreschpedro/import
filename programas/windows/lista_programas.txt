@@ -1,0 +1,104 @@
+necesito que organices estos programas al igual como esta organizado el menu de inicio de kali linux
+
+Advanced renamer
+Corel Draw
+Any Video Converter
+CCleaner
+CPUZ
+DbSchema
+Driver Booster
+Discord
+Driver Easy
+Epic Games
+Forza Horizon 3
+Foxit Reader
+Git
+Google Chrome
+Heidi SQL
+JDownloader
+Libre Office
+Visual Studio Code
+Visual Studio comunity 2022
+microsoft edge
+MongoDB Compass
+Moxilla Firefox
+MySQL Workbench
+Need for speed
+NoSQL Booster for mongodb
+notion
+Opera gx
+Virtual box
+postman
+qbittorrent
+rainmater
+recuva
+rustdesk
+steam
+sublime text
+subtitle edit
+sumatra pdf
+teamviwer
+telegram descktop
+terabox
+vortex
+vysor
+windistart
+zoom
+
+
+
+- **Accesorios**
+  - Advanced Renamer
+  - CCleaner
+  - CPUZ
+  - Driver Booster
+  - Driver Easy
+  - Foxit Reader
+  - JDownloader
+  - Libre Office
+  - Notion
+  - Rainmeter
+  - Recuva
+  - RustDesk
+  - Subtitle Edit
+  - Sumatra PDF
+  - TeamViewer
+
+- **Gráficos**
+  - Corel Draw
+
+- **Internet**
+  - Telegram Desktop
+  - Any Video Converter
+  - TeraBox
+  - Discord
+  - Epic Games
+  - Google Chrome
+  - Microsoft Edge
+  - Mozilla Firefox
+  - Opera GX
+  - Zoom
+  - qBittorrent
+
+- **Juegos**
+  - Bioshok
+  - Need for Speed
+
+- **Desarrollo**
+  - Visual Studio Code
+  - Visual Studio Community 2022
+  - DbSchema
+  - Git
+  - Heidi SQL
+  - MongoDB Compass
+  - MySQL Workbench
+  - NoSQL Booster for MongoDB
+  - Sublime Text
+  - Postman
+
+- **Sistema**
+  - Virtual Box
+  - Vortex
+  - Vysor
+  - WinDirstat
+

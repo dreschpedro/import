@@ -14,6 +14,7 @@ choco install patch-my-pc -y
 choco install cpu-z -y
 choco install sumatrapdf -y
 choco install vlc -y
+choco install obsidian -y
 choco install onecommander -y
 choco install qbittorrent -y
 choco install windirstat -y
@@ -37,7 +38,6 @@ choco install heidisql -y
 choco install postman -y
 choco install jcpicker -y
 
-
 Python			-> https://www.python.org/downloads/
 Rainmether			-> https://www.rainmeter.net
 Power Shell 7		-> learn.microsoft.com/es-es/powershell/scripting/install/installing-powershell-on-windows
@@ -51,11 +51,9 @@ MySQL conector		-> https://www.mysql.com/products/connector/
 visual basic 2010		-> https://mega.nz/file/6o0mzIYR#yAIbfgbZwjAfdXiDUUNrTC-Ql6C4tdI-8Wmso0_Mol4
 maria db			-> https://mega.nz/file/u1MEyCKA#Jtf8nyxTxi84T7ANcFRWprYluap2zI6jY_Gk4fvtTJI
 opera gx			-> https://www.opera.com/gx
-terabox			-> https://www.terabox.com/terabox-cloud-storage-for-pc-free-download
 DbSchema			-> https://dbschema.com/download.html
 Afterburner			-> https://www.msi.com/Landing/afterburner/graphics-cards
 Ccleaner			-> https://www.ccleaner.com/ccleaner/download/standard
 Recuva			-> https://www.ccleaner.com/recuva/download/standard
 Vysor				-> https://www.vysor.io
 Any Video Converter	-> https://www.any-video-converter.com/en6/for_video_free/whatnew.html
-Screen Task			-> https://github.com/EslaMx7/ScreenTask/releases/tag/v1.2
