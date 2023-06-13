@@ -15,6 +15,7 @@ winget install "Python 3" --accept-package-agreements
 choco install sublimetext4 -y
 choco install onecommander -y
 choco install jcpicker -y
+winget import -i .\apps_winget.txt
 
 
 

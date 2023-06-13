@@ -38,6 +38,7 @@ choco install heidisql -y
 choco install postman -y
 choco install jcpicker -y
 
+
 Python			-> https://www.python.org/downloads/
 Rainmether			-> https://www.rainmeter.net
 Power Shell 7		-> learn.microsoft.com/es-es/powershell/scripting/install/installing-powershell-on-windows

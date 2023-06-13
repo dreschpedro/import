@@ -1,0 +1,4 @@
+ 
+
+winget import -i .\myapps.json
+
