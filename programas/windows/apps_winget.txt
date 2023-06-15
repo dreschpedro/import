@@ -7,46 +7,13 @@
 			"Packages" : 
 			[
 				{
-					"PackageIdentifier" : "NexusMods.Vortex"
-				},
-				{
-					"PackageIdentifier" : "7zip.7zip"
-				},
-				{
-					"PackageIdentifier" : "HulubuluSoftware.AdvancedRenamer"
-				},
-				{
 					"PackageIdentifier" : "Piriform.CCleaner.ProTrial"
-				},
-				{
-					"PackageIdentifier" : "CPUID.CPU-Z"
 				},
 				{
 					"PackageIdentifier" : "Discord.Discord"
 				},
 				{
-					"PackageIdentifier" : "IObit.DriverBooster"
-				},
-				{
-					"PackageIdentifier" : "Easeware.DriverEasy"
-				},
-				{
-					"PackageIdentifier" : "Foxit.FoxitReader"
-				},
-				{
-					"PackageIdentifier" : "Git.Git"
-				},
-				{
-					"PackageIdentifier" : "HeidiSQL.HeidiSQL"
-				},
-				{
 					"PackageIdentifier" : "MariaDB.Server"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.Edge"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.PowerShell"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.WindowsTerminal"
@@ -55,13 +22,7 @@
 					"PackageIdentifier" : "MongoDB.Compass.Full"
 				},
 				{
-					"PackageIdentifier" : "Mozilla.Firefox"
-				},
-				{
 					"PackageIdentifier" : "Opera.OperaGX"
-				},
-				{
-					"PackageIdentifier" : "Postman.Postman"
 				},
 				{
 					"PackageIdentifier" : "Rainmeter.Rainmeter"
@@ -76,55 +37,19 @@
 					"PackageIdentifier" : "Nikse.SubtitleEdit"
 				},
 				{
-					"PackageIdentifier" : "SumatraPDF.SumatraPDF"
-				},
-				{
-					"PackageIdentifier" : "TeamViewer.TeamViewer"
-				},
-				{
-					"PackageIdentifier" : "VideoLAN.VLC"
-				},
-				{
-					"PackageIdentifier" : "WinDirStat.WinDirStat"
-				},
-				{
 					"PackageIdentifier" : "Microsoft.VisualStudio.2022.Community"
-				},
-				{
-					"PackageIdentifier" : "Obsidian.Obsidian"
-				},
-				{
-					"PackageIdentifier" : "Notion.Notion"
 				},
 				{
 					"PackageIdentifier" : "AppWork.JDownloader"
 				},
 				{
-					"PackageIdentifier" : "qBittorrent.qBittorrent"
-				},
-				{
 					"PackageIdentifier" : "Vysor.Vysor"
-				},
-				{
-					"PackageIdentifier" : "TheDocumentFoundation.LibreOffice"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.VCRedist.2010.x64"
 				},
 				{
-					"PackageIdentifier" : "Oracle.VirtualBox"
-				},
-				{
-					"PackageIdentifier" : "Google.Chrome"
-				},
-				{
 					"PackageIdentifier" : "Microsoft.DotNet.Runtime.6"
-				},
-				{
-					"PackageIdentifier" : "Zoom.Zoom"
-				},
-				{
-					"PackageIdentifier" : "Telegram.TelegramDesktop"
 				},
 				{
 					"PackageIdentifier" : "Oracle.MySQL"
@@ -133,19 +58,10 @@
 					"PackageIdentifier" : "Microsoft.DotNet.SDK.7"
 				},
 				{
-					"PackageIdentifier" : "EpicGames.EpicGamesLauncher"
-				},
-				{
 					"PackageIdentifier" : "Microsoft.VCRedist.2008.x86"
 				},
 				{
-					"PackageIdentifier" : "OpenJS.NodeJS"
-				},
-				{
 					"PackageIdentifier" : "Microsoft.WebDeploy"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.VisualStudioCode"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.VCRedist.2010.x86"
