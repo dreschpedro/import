@@ -40,22 +40,24 @@ choco install jcpicker -y
 choco install jdownloader -y
 
 
-Python			-> https://www.python.org/downloads/
+Python				-> https://www.python.org/downloads/
+MongoDB Compass			-> https://www.mongodb.com/try/download/compass
 Rainmether			-> https://www.rainmeter.net
-Power Shell 7		-> learn.microsoft.com/es-es/powershell/scripting/install/installing-powershell-on-windows
+Power Shell 7			-> learn.microsoft.com/es-es/powershell/scripting/install/installing-powershell-on-windows
+Power Shell 7			-> winget search Microsoft.PowerShell
 amd chipset			-> https://www.amd.com/en/support
 Steam				-> https://store.steampowered.com/about/
 figma				-> https://www.figma.com/downloads/
-discord			-> https://discordapp.com/api/download?platform=win
+discord				-> https://discordapp.com/api/download?platform=win
 blue stacks			-> https://www.bluestacks.com/
-office			-> https://terabox.com/s/1g1xqyAFkpnSGMcYAY_84yA
-MySQL conector		-> https://www.mysql.com/products/connector/
+office				-> https://terabox.com/s/1KPg8aO0TmoPwPun8SXkodw
+MySQL conector			-> https://www.mysql.com/products/connector/
 visual basic 2010		-> https://mega.nz/file/6o0mzIYR#yAIbfgbZwjAfdXiDUUNrTC-Ql6C4tdI-8Wmso0_Mol4
 maria db			-> https://mega.nz/file/u1MEyCKA#Jtf8nyxTxi84T7ANcFRWprYluap2zI6jY_Gk4fvtTJI
 opera gx			-> https://www.opera.com/gx
 DbSchema			-> https://dbschema.com/download.html
 Afterburner			-> https://www.msi.com/Landing/afterburner/graphics-cards
 Ccleaner			-> https://www.ccleaner.com/ccleaner/download/standard
-Recuva			-> https://www.ccleaner.com/recuva/download/standard
+Recuva				-> https://www.ccleaner.com/recuva/download/standard
 Vysor				-> https://www.vysor.io
-Any Video Converter	-> https://www.any-video-converter.com/en6/for_video_free/whatnew.html
+Any Video Converter		-> https://www.any-video-converter.com/en6/for_video_free/whatnew.html

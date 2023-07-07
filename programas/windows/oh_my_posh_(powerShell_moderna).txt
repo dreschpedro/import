@@ -37,6 +37,17 @@ oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\[NOMBRE DEL TEMA].omp.json"
 Import-Module -Name Terminal-Icons
 ________________________________________
 
+###TEMAS OhMyPosh###
+takuya
+sim-web
+pure
+probua.minimal
+powerlevel10k_rainbow
+nordtron
+avit
+wopian
+tokyonight_storm
+the-unnamed
 
 
 // MIRAR VIDEO https://youtu.be/d9y0l7yY404
@@ -46,3 +57,18 @@ ________________________________________
 **********sin mensaje de inicio PowerShell (MIRAR IMAGEN)
 
 "-nologo"
+
+
+
+
+TEMAS OhMyPosh
+takuya
+sim-web
+pure
+probua.minimal
+powerlevel10k_rainbow
+nordtron
+avit
+wopian
+tokyonight_storm
+the-unnamed
