@@ -39,7 +39,7 @@ choco install postman -y
 choco install jcpicker -y
 choco install jdownloader -y
 
-
+Driver USB WIFI			-> https://www.tp-link.com/ar/support/download/tl-wn725n/
 Python				-> https://www.python.org/downloads/
 MongoDB Compass			-> https://www.mongodb.com/try/download/compass
 Rainmether			-> https://www.rainmeter.net
