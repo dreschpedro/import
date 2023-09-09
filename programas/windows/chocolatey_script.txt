@@ -17,6 +17,7 @@ choco install vlc -y
 choco install obsidian -y
 choco install onecommander -y
 choco install qbittorrent -y
+choco install thunderbird -y
 choco install windirstat -y
 choco install git -y
 choco install vscode -y
@@ -40,11 +41,11 @@ choco install jcpicker -y
 choco install jdownloader -y
 
 Driver USB WIFI			-> https://www.tp-link.com/ar/support/download/tl-wn725n/
+Subtitle Edit (trsncribir)	-> https://github.com/SubtitleEdit/subtitleedit/releases
 Python				-> https://www.python.org/downloads/
 MongoDB Compass			-> https://www.mongodb.com/try/download/compass
 Rainmether			-> https://www.rainmeter.net
-Power Shell 7			-> learn.microsoft.com/es-es/powershell/scripting/install/installing-powershell-on-windows
-Power Shell 7			-> winget search Microsoft.PowerShell
+Power Shell 7			-> learn.microsoft.com/es-es/powershell/scripting/install/installing-
 amd chipset			-> https://www.amd.com/en/support
 Steam				-> https://store.steampowered.com/about/
 figma				-> https://www.figma.com/downloads/

@@ -38,13 +38,14 @@ Import-Module -Name Terminal-Icons
 ________________________________________
 
 ###TEMAS OhMyPosh###
+avit
+amro
 takuya
 sim-web
 pure
 probua.minimal
 powerlevel10k_rainbow
 nordtron
-avit
 wopian
 tokyonight_storm
 the-unnamed
@@ -57,18 +58,3 @@ the-unnamed
 **********sin mensaje de inicio PowerShell (MIRAR IMAGEN)
 
 "-nologo"
-
-
-
-
-TEMAS OhMyPosh
-takuya
-sim-web
-pure
-probua.minimal
-powerlevel10k_rainbow
-nordtron
-avit
-wopian
-tokyonight_storm
-the-unnamed

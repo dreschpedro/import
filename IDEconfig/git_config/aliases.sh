@@ -19,6 +19,8 @@ alias gcun='git config --global user.name "dreschpedro"'
 alias gcue='git config --global user.email "99pedrodresch@gmail.com"'
 alias aguf='sudo apt update && apt full-upgrade -y'
 alias abrir='xdg-open'
+alias ns='npm start'
+alias nrd='npm run dev'
 
 case "$TERM" in
 xterm*)
