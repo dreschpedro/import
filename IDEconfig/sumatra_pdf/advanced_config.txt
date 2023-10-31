@@ -1,7 +1,7 @@
 # For documentation, see https://www.sumatrapdfreader.org/settings/settings3-4-6.html
 FixedPageUI [
 	TextColor = #000000
-	BackgroundColor = #8B95A0
+	BackgroundColor = #adb4bc
 	SelectionColor = #f5fc0c
 	WindowMargin = 2 4 2 4
 	PageSpacing = 4 4
@@ -61,7 +61,7 @@ ShowToolbar = true
 ShowFavorites = false
 ShowToc = true
 TocDy = 0
-SidebarDx = 204
+SidebarDx = 479
 ToolbarSize = 18
 TabWidth = 300
 TreeFontSize = 0
@@ -69,14 +69,816 @@ SmoothScroll = false
 ShowStartPage = true
 CheckForUpdates = true
 WindowState = 2
-WindowPos = 543 0 834 1080
+WindowPos = 1913 -397 809 967
 UseTabs = true
 UseSysColors = false
 CustomScreenDPI = 0
 
+FileStates [
+	[
+		FilePath = E:\REPOSITORIOS\repos_facu\3er_anho\2do_cuatrimestre\auditoria_sist\3_metodologia\auditoria_ejemplo\auditoria_1.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 169.493
+		PageNo = 8
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 1913 -397 809 967
+		ShowToc = false
+		SidebarDx = 479
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = E:\REPOSITORIOS\repos_facu\3er_anho\2do_cuatrimestre\auditoria_sist\2_control_interno_externo\Clase-2-Controles-y-perfil-del-Auditor.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 472.721
+		PageNo = 14
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 1913 -397 809 967
+		ShowToc = false
+		SidebarDx = 479
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = E:\REPOSITORIOS\repos_facu\3er_anho\2do_cuatrimestre\met_invesigacion\bibliografia\Borsotti_.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 3
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 305.276
+		PageNo = 32
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 1913 -397 809 967
+		ShowToc = false
+		SidebarDx = 479
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = E:\REPOSITORIOS\repos_facu\3er_anho\2do_cuatrimestre\met_invesigacion\bibliografia\La_tesis_como_orientarse_para_su_elaboración.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 3
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 15.9444
+		PageNo = 64
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 1913 -397 809 967
+		ShowToc = false
+		SidebarDx = 479
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = E:\REPOSITORIOS\repos_facu\3er_anho\2do_cuatrimestre\met_invesigacion\3_tp\Informe_tp3_dreschPedro.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 2
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 395.915
+		PageNo = 2
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 1913 -397 809 967
+		ShowToc = false
+		SidebarDx = 479
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\petruz\Desktop\Circuitos-Posadas-2023-Completo.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -7 0 974 1087
+		ShowToc = false
+		SidebarDx = 479
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = E:\REPOSITORIOS\silicon\pas_proy\server\dataBase\modelo_logico.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 3
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -7 0 974 1087
+		ShowToc = false
+		SidebarDx = 479
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\petruz\Desktop\localhost_3000_admin_asistencias.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -7 0 974 1087
+		ShowToc = false
+		SidebarDx = 479
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = E:\REPOSITORIOS\repos_facu\3er_anho\2do_cuatrimestre\auditoria_sist\1_origen\pdf-auditoria-informatica-un-enfoque-practico-mario-piattini_compress.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 32
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -7 0 974 1087
+		ShowToc = false
+		SidebarDx = 479
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = E:\REPOSITORIOS\repos_facu\3er_anho\2do_cuatrimestre\auditoria_sist\1_origen\Origen_de_la_auditoria.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 359.646
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -7 0 974 1087
+		ShowToc = false
+		SidebarDx = 479
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = E:\REPOSITORIOS\repos_facu\3er_anho\2do_cuatrimestre\auditoria_sist\3_metodologia\auditoria_ejemplo\auditoria_2_fisica.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -7 0 974 1087
+		ShowToc = false
+		SidebarDx = 479
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = E:\REPOSITORIOS\repos_facu\3er_anho\2do_cuatrimestre\auditoria_sist\5_tipos_auditoria\1_fisica\auditoria_seguridad_fisica.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 316.543
+		PageNo = 8
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -7 0 974 1087
+		ShowToc = false
+		SidebarDx = 479
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = E:\REPOSITORIOS\repos_facu\3er_anho\2do_cuatrimestre\estadistica\4tema\estadistica_semana_4.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 215.063
+		PageNo = 1
+		Zoom = 200
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -7 0 974 1087
+		ShowToc = false
+		SidebarDx = 479
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = E:\REPOSITORIOS\mi_obsidian\Introducción al Hacking — Hack4u.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 6843.98
+		PageNo = 1
+		Zoom = fit width
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -7 0 974 1087
+		ShowToc = false
+		SidebarDx = 479
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = E:\REPOSITORIOS\mi_obsidian\archivos_adjuntos\redes_de_computadoras-freelibros-org.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 7
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -7 0 974 1087
+		ShowToc = true
+		SidebarDx = 479
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = E:\REPOSITORIOS\repos_facu\3er_anho\2do_cuatrimestre\estadistica\2tema\estadistica_semana_2.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = 73.1253 182.875
+		PageNo = 1
+		Zoom = 300
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -7 0 974 1087
+		ShowToc = false
+		SidebarDx = 479
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\petruz\Desktop\Resultados de la consulta. Dónde ir y qué llevar para tramitar el CUD _ Argentina.gob.ar.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 1
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 668.501
+		PageNo = 1
+		Zoom = 75
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -7 0 974 1087
+		ShowToc = false
+		SidebarDx = 479
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\petruz\Desktop\modulos.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -7 0 974 1087
+		ShowToc = false
+		SidebarDx = 479
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\petruz\Desktop\CamScanner 29-09-2023 16.56.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 165.938
+		PageNo = 1
+		Zoom = 200
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -7 0 974 1087
+		ShowToc = false
+		SidebarDx = 479
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = E:\REPOSITORIOS\repos_facu\3er_anho\2do_cuatrimestre\estadistica\5tema\estadistica_semana5.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 166.751
+		PageNo = 1
+		Zoom = 150
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -7 0 974 1087
+		ShowToc = false
+		SidebarDx = 479
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = E:\REPOSITORIOS\repos_facu\3er_anho\2do_cuatrimestre\met_invesigacion\3_tp\formacion_concienciacion_ciberseguridad.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 584.83
+		PageNo = 7
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -7 0 974 1087
+		ShowToc = false
+		SidebarDx = 479
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = E:\REPOSITORIOS\repos_facu\3er_anho\2do_cuatrimestre\met_invesigacion\3_tp\auditorias_ciberseguridad.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 350.968
+		PageNo = 3
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 1
+		WindowPos = -7 0 974 1087
+		ShowToc = false
+		SidebarDx = 480
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = C:\Users\petruz\Desktop\doc1.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 280.25
+		PageNo = 1
+		Zoom = 150
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 543 0 834 1080
+		ShowToc = false
+		SidebarDx = 480
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = E:\REPOSITORIOS\repos_facu\3er_anho\2do_cuatrimestre\auditoria_sist\5_tipos_auditoria\1_fisica\AuditoriadelaSeguridadFisica.xps
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 352.508
+		PageNo = 4
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 543 0 834 1080
+		ShowToc = false
+		SidebarDx = 480
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = E:\REPOSITORIOS\repos_facu\3er_anho\2do_cuatrimestre\estadistica\3tema\estadistica_semana_3.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 608.25
+		PageNo = 2
+		Zoom = 150
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 543 0 834 1080
+		ShowToc = false
+		SidebarDx = 480
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = E:\REPOSITORIOS\repos_facu\3er_anho\2do_cuatrimestre\met_invesigacion\2_tp\Informe_tp1_dreschPedro.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 641.901
+		PageNo = 3
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 543 0 834 1080
+		ShowToc = false
+		SidebarDx = 480
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = E:\REPOSITORIOS\repos_facu\3er_anho\2do_cuatrimestre\met_invesigacion\2_tp\Informe_tp2_dreschPedro.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 144.671
+		PageNo = 4
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 543 0 834 1080
+		ShowToc = false
+		SidebarDx = 480
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = E:\REPOSITORIOS\repos_facu\3er_anho\2do_cuatrimestre\met_invesigacion\3_tp\ransomware.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 15
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = -7 0 974 1087
+		ShowToc = false
+		SidebarDx = 479
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = E:\REPOSITORIOS\repos_facu\3er_anho\2do_cuatrimestre\auditoria_sist\3tema\auditoria_dividido\auditoria_10_seguridad.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 668.275
+		PageNo = 1
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 543 0 834 1080
+		ShowToc = false
+		SidebarDx = 480
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = E:\REPOSITORIOS\repos_facu\3er_anho\2do_cuatrimestre\auditoria_sist\3tema\auditoria_dividido\auditoria_9_calidad.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 3
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 543 0 834 1080
+		ShowToc = false
+		SidebarDx = 480
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = E:\REPOSITORIOS\repos_facu\3er_anho\2do_cuatrimestre\auditoria_sist\3tema\auditoria_dividido\auditoria_12_aplicaciones.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 731.107
+		PageNo = 4
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 543 0 834 1080
+		ShowToc = false
+		SidebarDx = 480
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = E:\REPOSITORIOS\repos_facu\3er_anho\2do_cuatrimestre\auditoria_sist\3tema\auditoria_dividido\auditoria_11_redes.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 8
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 543 0 834 1080
+		ShowToc = false
+		SidebarDx = 480
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = E:\REPOSITORIOS\repos_facu\3er_anho\2do_cuatrimestre\auditoria_sist\3tema\auditoria_dividido\auditoria_9.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 2
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 543 0 834 1080
+		ShowToc = false
+		SidebarDx = 480
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = E:\REPOSITORIOS\repos_facu\3er_anho\2do_cuatrimestre\auditoria_sist\3tema\auditoria_dividido\auditoria_8_base_datos.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 6
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 543 0 834 1080
+		ShowToc = false
+		SidebarDx = 480
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = E:\REPOSITORIOS\repos_facu\3er_anho\2do_cuatrimestre\auditoria_sist\3tema\ejemplo_auditoria.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 437.042
+		PageNo = 121
+		Zoom = 66.67
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 543 0 834 1080
+		ShowToc = false
+		SidebarDx = 480
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = E:\REPOSITORIOS\repos_facu\3er_anho\2do_cuatrimestre\auditoria_sist\3tema\clase_3-metodologia_para_la_auditoria.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 8
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 543 0 834 1080
+		ShowToc = false
+		SidebarDx = 480
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = E:\REPOSITORIOS\repos_facu\3er_anho\2do_cuatrimestre\auditoria_sist\1tema\Auditoría_de_SistemasINTRODUCCION.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 14
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 543 0 834 1080
+		ShowToc = false
+		SidebarDx = 480
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = E:\REPOSITORIOS\repos_facu\1er_anho\redes_informaticas\redes 2020\tecnico pc\21. Redes WIFI.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 316.103
+		PageNo = 5
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 543 0 834 1080
+		ShowToc = true
+		SidebarDx = 480
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = E:\REPOSITORIOS\repos_facu\1er_anho\redes_informaticas\redes 2020\tecnico pc\20. Fundamentos de Redes.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 81.8382
+		PageNo = 8
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 543 0 834 1080
+		ShowToc = true
+		SidebarDx = 480
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+	[
+		FilePath = E:\REPOSITORIOS\repos_facu\1er_anho\redes_informaticas\redes 2020\tecnico pc\02. Componentes y armado de PC.pdf
+		Favorites [
+		]
+		IsPinned = false
+		IsMissing = false
+		OpenCount = 0
+		UseDefaultState = false
+		DisplayMode = continuous
+		ScrollPos = -1 -1
+		PageNo = 23
+		Zoom = fit page
+		Rotation = 0
+		WindowState = 2
+		WindowPos = 543 0 834 1080
+		ShowToc = true
+		SidebarDx = 480
+		DisplayR2L = false
+		ReparseIdx = 0
+	]
+]
 SessionData [
 ]
 TimeOfLastUpdateCheck = 0 0
-OpenCountWeek = 601
+OpenCountWeek = 667
 
 # Settings below are not recognized by the current version
