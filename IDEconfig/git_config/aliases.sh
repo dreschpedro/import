@@ -213,6 +213,7 @@ alias gwtrm='git worktree remove'
 alias history=omz_history
 alias l='ls -lah'
 alias la='ls -lAh'
+alias lsh='ls -sh'
 alias ll='ls -l'
 alias ls='ls -F --color=auto --show-control-chars'
 alias lsa='ls -lah'
