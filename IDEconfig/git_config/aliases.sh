@@ -4,6 +4,7 @@
 # --show-control-chars: help showing Korean or accented characters
 alias _='sudo '
 alias abrir=xdg-open
+alias ..='cd ..'
 alias aguf='sudo apt update && apt full-upgrade -y'
 alias c=xclip
 alias cll=clear
