@@ -227,6 +227,7 @@ alias reca='source ~/.zshrc'
 alias reczsh='source ~/.zshrc'
 alias tree='colorls --tree'
 alias v='xclip -o'
+alias uvi='uvicorn app:app --reload'
 
 
 case "$TERM" in
