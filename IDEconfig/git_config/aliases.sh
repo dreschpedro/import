@@ -225,7 +225,7 @@ alias ns='npm start'
 alias rd=rmdir
 alias reca='source ~/.zshrc'
 alias reczsh='source ~/.zshrc'
-alias tree='cmd //c tree //f'
+alias tree3='cmd //c tree //f'
 alias v='xclip -o'
 alias uvi='uvicorn app:app --reload'
 
