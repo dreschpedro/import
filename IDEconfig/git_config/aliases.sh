@@ -229,6 +229,7 @@ alias tree3='cmd //c tree //f'
 alias v='xclip -o'
 alias uvi='uvicorn app:app --reload'
 alias ve='virtualenv'
+alias serv='py manage.py runserver'
 
 
 case "$TERM" in
