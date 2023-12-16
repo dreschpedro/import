@@ -1,3 +1,6 @@
+### para abrir al archivo de configuracion de powershell
+notepad $PROFILE
+
 ### INSTALACION ###
 $> winget install JanDeDobbeleer.OhMyPosh -s winget
 
@@ -33,7 +36,8 @@ PEGAR ... EN EL ARCHIVO DE CONFIGUACION
 
 #### CONFIGURACION FINAL ######
 ________________________________________
-oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\[NOMBRE DEL TEMA].omp.json" | Invoke-Expression
+oh-my-posh init pwsh | Invoke-Expression
+& ([ScriptBlock]::Create((oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\amro.omp.json" --print) -join "`n"))
 Import-Module -Name Terminal-Icons
 ________________________________________
 

@@ -1,6 +1,30 @@
 install->
 
-sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+$ sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 
 ZSH_THEME_RANDOM_CANDIDATES=("intheloop" "aussiegeek" "bira" "blinks" "candy" "crcandy" "dst" "amuse" "frisk" "funky" "gnzh" "itchy" "jispwoso")
+
+
+# al instalar oh-my-zsh quedan inhabilitados los alias de .zshrc por lo que hay que crearlos dentro del directorio de oh-my-zsh...
+
+$ cd ~/.oh-my-zsh/custom
+$ touch aliases.zsh 
+$ subl aliases.zsh 
+
+#pegar los alias
+#cerrar el editor
+
+$ source ~/.zshrc
+
+
+
+
+descargar ls fuente HackNerdFont
+$ wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/Hack.zip
+$ unzip Hack.zip -d hackNerdFont
+
+# instalar las fuentes => https://medium.com/source-words/how-to-manually-install-update-and-uninstall-fonts-on-linux-a8d09a3853b0
+
+#TODO ESXPLICADO ACA
+https://youtu.be/8q1NDEKkSf4
