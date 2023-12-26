@@ -46,6 +46,8 @@ alias serv='py manage.py runserver'
 alias sd='--settings=config.settings.development'
 alias sp='--settings=config.settings.production'
 alias dps='docker-compose ps --format "table {{.Name}}\t{{.Image}}\t{{.Service}}\t{{.Ports}}"'
+alias c='xclip -i'
+alias v='xclip -o'
 
 case "$TERM" in
 xterm*)
