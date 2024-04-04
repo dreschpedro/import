@@ -13,6 +13,7 @@ choco install drivereasyfree -y
 choco install patch-my-pc -y
 choco install cpu-z -y
 choco install sumatrapdf -y
+choco install xampp-80 -y
 choco install vlc -y
 choco install obsidian -y
 choco install onecommander -y
