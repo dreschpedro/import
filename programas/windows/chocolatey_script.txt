@@ -82,6 +82,7 @@ choco install postman -y
 choco install jcpicker -y
 choco install jdownloader -y
 
+Composer (PHP)      -> https://getcomposer.org/download/
 Driver USB WIFI			-> https://www.tp-link.com/ar/support/download/tl-wn725n/
 Subtitle Edit (trsncribir)	-> https://github.com/SubtitleEdit/subtitleedit/releases
 Python				-> https://www.python.org/downloads/
