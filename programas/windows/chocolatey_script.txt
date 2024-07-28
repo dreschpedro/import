@@ -9,34 +9,21 @@ $> choco upgrade all -y
 ######## WORK
 
 choco install driverbooster -y
-choco install drivereasyfree -y
 choco install patch-my-pc -y
 choco install cpu-z -y
 choco install sumatrapdf -y
-choco install xampp-80 -y
 choco install vlc -y
-choco install obsidian -y
 choco install onecommander -y
-choco install thunderbird -y
 choco install windirstat -y
-choco install git -y
 choco install vscode -y
 choco install sublimetext4 -y
 choco install googlechrome -y
 choco install firefox -y
 choco install 7zip -y
 choco install foxitreader -y
-choco install libreoffice-fresh -y
-choco install teamviewer -y
 choco install virtualbox -y
-choco install zoom -y
-choco install notion -y
-choco install telegram -y
-choco install advanced-renamer -y
 choco install heidisql -y
 choco install postman -y
-choco install jcpicker -y
-choco install jdownloader -y
 
 ######## GAME
 choco install driverbooster -y
@@ -98,6 +85,7 @@ blue stacks			-> https://www.bluestacks.com/
 office				-> https://terabox.com/s/1KPg8aO0TmoPwPun8SXkodw
 MySQL conector			-> https://www.mysql.com/products/connector/
 visual basic 2010		-> https://mega.nz/file/6o0mzIYR#yAIbfgbZwjAfdXiDUUNrTC-Ql6C4tdI-8Wmso0_Mol4
+maria db installer  -> https://mariadb.org/download/?t=mariadb&p=mariadb&r=11.4.2&os=windows&cpu=x86_64&pkg=msi&mirror=archive
 maria db			-> https://mega.nz/file/u1MEyCKA#Jtf8nyxTxi84T7ANcFRWprYluap2zI6jY_Gk4fvtTJI
 opera gx			-> https://www.opera.com/gx
 DbSchema			-> https://dbschema.com/download.html
