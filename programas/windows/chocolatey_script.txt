@@ -82,7 +82,7 @@ Steam				-> https://store.steampowered.com/about/
 figma				-> https://www.figma.com/downloads/
 discord				-> https://discordapp.com/api/download?platform=win
 blue stacks			-> https://www.bluestacks.com/
-office				-> https://terabox.com/s/1KPg8aO0TmoPwPun8SXkodw
+office				-> https://www.ardilu.com/descargar/office-2021-home-student
 MySQL conector			-> https://www.mysql.com/products/connector/
 visual basic 2010		-> https://mega.nz/file/6o0mzIYR#yAIbfgbZwjAfdXiDUUNrTC-Ql6C4tdI-8Wmso0_Mol4
 maria db installer  -> https://mariadb.org/download/?t=mariadb&p=mariadb&r=11.4.2&os=windows&cpu=x86_64&pkg=msi&mirror=archive
