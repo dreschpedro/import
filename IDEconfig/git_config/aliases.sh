@@ -28,6 +28,7 @@ alias gst='git status'
 alias grev='git revert'
 alias grh='git reset'
 alias gs='git switch'
+alias pas='php artisan serve'
 alias l='ls -lah'
 alias la='ls -lAh'
 alias lsh='ls -sh'
@@ -48,9 +49,6 @@ alias sp='--settings=config.settings.production'
 alias dps='docker-compose ps --format "table {{.Name}}\t{{.Image}}\t{{.Service}}\t{{.Ports}}"'
 alias c='xclip -i'
 alias v='xclip -o'
-alias choco_ssh='ssh -p 65002 u914212490@62.72.62.165'
-alias binary_s_ssh='ssh -p 65002 u723691422@194.195.84.59'
-
 
 case "$TERM" in
 xterm*)
