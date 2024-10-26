@@ -49,6 +49,7 @@ alias sp='--settings=config.settings.production'
 alias dps='docker-compose ps --format "table {{.Name}}\t{{.Image}}\t{{.Service}}\t{{.Ports}}"'
 alias c='xclip -i'
 alias v='xclip -o'
+alias choco_ssh='ssh -p 65002 u914212490@62.72.62.165'
 
 case "$TERM" in
 xterm*)
