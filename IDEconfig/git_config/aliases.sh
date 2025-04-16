@@ -50,6 +50,10 @@ alias dps='docker-compose ps --format "table {{.Name}}\t{{.Image}}\t{{.Service}}
 alias c='xclip -i'
 alias v='xclip -o'
 alias choco_ssh='ssh -p 65002 u914212490@62.72.62.165'
+alias faka='ssh -i ~/.ssh/google_compute_engine karismasia10@34.125.184.192'
+alias woka='ssh -i ~/.ssh/google_compute_engine karismasia10@34.118.45.244'
+alias dopu='docker build -t cruznegradev/mariosaave:1.0.3 . 
+docker push cruznegradev/mariosaave:1.0.3'
 
 case "$TERM" in
 xterm*)
