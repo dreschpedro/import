@@ -55,6 +55,7 @@ alias woka='ssh -i ~/.ssh/google_compute_engine karismasia10@34.118.45.244'
 alias dopu='docker build -t cruznegradev/mariosaave:1.0.3 . 
 docker push cruznegradev/mariosaave:1.0.3'
 alias amelie='ssh -p 65002 u334216874@149.62.37.201'
+alias crowdfonding='ssh -p 65002 u334216874@149.62.37.201'
 
 case "$TERM" in
 xterm*)
