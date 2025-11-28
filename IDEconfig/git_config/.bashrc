@@ -70,6 +70,12 @@ alias amelie='ssh -p 65002 u334216874@149.62.37.201'
 alias crowdfonding='ssh devops@72.60.70.170'
 alias victor='ssh root@69.62.102.192'
 
+#hacer merge de la rama dev a main
+alias gmdm="git checkout dev && git pull origin dev && git checkout main && git pull origin main && git merge dev && git push origin main"
+
+#hacer merge de la rama main a dev
+alias gmmd="git checkout main && git pull origin main && git checkout dev && git pull origin dev && git merge main && git push origin dev"
+
 case "$TERM" in
 xterm*)
 	# The following programs are known to require a Win32 Console
