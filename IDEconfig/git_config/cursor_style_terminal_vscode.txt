@@ -1,0 +1,8 @@
+Desde los Ajustes de VS Code / Cursor (Lo más probable)
+Presiona Ctrl + , (Coma) para abrir los Settings.
+
+En la barra de búsqueda de arriba, escribe: `terminal cursor style`.
+
+Busca la opción Terminal > Integrated: Cursor Style.
+
+Cambia el valor de block a line.
