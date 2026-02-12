@@ -1,15 +1,3 @@
-# === PATH para mis scripts personalizados ===
-export PATH="$PATH:/c/Users/Pedro/Documents/claude-commit"
-
-# === Alias opcional para git ccommit ===
-alias cc='
-if git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
-  claude-commit
-else
-  echo "⚠️ No estás dentro de un repositorio Git."
-fi'
-
-
 # Some good standards, which are not used if the user
 # creates his/her own .bashrc/.bash_profile
 
